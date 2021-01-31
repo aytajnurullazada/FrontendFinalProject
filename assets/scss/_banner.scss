@@ -1,0 +1,38 @@
+.yl-banner-img{
+    position: absolute;
+    right: -30px;
+    top: 90px;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.yl-banner-tag{
+    padding-right: 30px;
+    border-radius: 40px;
+    display: inline-block;
+    margin-bottom: 45px;
+    background-color: #efeff0;
+}
+.yl-banner-text {
+    z-index: 1;
+    max-width: 690px;
+    overflow: hidden;
+    padding: 230px 0px 180px;
+}
+.yl-banner-tag span {
+    color: #fff;
+    font-weight: 500;
+    padding: 12px 30px;
+    margin-right: 10px;
+    border-radius: 40px;
+    display: inline-block;
+    background-color: #0000fe;
+}
+.yl-banner-text .yl-banner-tag p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 0;
+    display: inline-block;
+}

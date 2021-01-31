@@ -1,0 +1,31 @@
+@import"variables";
+.about-page-title .title-watermark {
+    left: 0;
+    right: 0;
+    top: -60px;
+    opacity: 0.04;
+    color: #53536c;
+    line-height: 1;
+    font-size: 100px;
+    font-weight: 900;
+    margin-bottom: 0;
+    text-align: center;
+    position: absolute;
+}
+.about-page-title{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+    span{
+    left: 90px;
+    position: absolute;
+    color: $primary-color;
+   
+    }
+}
+.aboutUs{
+    padding: 110px 0px;
+}

@@ -1,0 +1,90 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+  margin-bottom: .5rem;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+a {
+  color: #0000fe;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+div {
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.navv {
+  background-color: pink;
+}
+
+.yl-banner-img {
+  position: absolute;
+  right: -30px;
+  top: 90px;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.yl-banner-tag {
+  padding-right: 30px;
+  border-radius: 40px;
+  display: inline-block;
+  margin-bottom: 45px;
+  background-color: #efeff0;
+}
+
+.yl-banner-text {
+  z-index: 1;
+  max-width: 690px;
+  overflow: hidden;
+  padding: 230px 0px 180px;
+}
+
+.yl-banner-tag span {
+  color: #fff;
+  font-weight: 500;
+  padding: 12px 30px;
+  margin-right: 10px;
+  border-radius: 40px;
+  display: inline-block;
+  background-color: #0000fe;
+}
+
+.yl-banner-text .yl-banner-tag p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 0;
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */
