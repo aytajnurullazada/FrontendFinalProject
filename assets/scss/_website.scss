@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     font-family: $primary-font;
     font-size: 1rem;
@@ -8,29 +8,26 @@ body{
     text-align: left;
     background-color: #fff;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     color: $title-color;
     margin-bottom: .5rem;
     font-family: $secondary-font;
     font-weight: 500;
     line-height: 1.2;
-    
+
 }
+
 a {
     color: $primary-color;
     text-decoration: none;
     background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-   
 }
-div{
-    display: block;
-}
-.container{
-    max-width: 1200px;
+p{
+    font-size: 16px;
 }

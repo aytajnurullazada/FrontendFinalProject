@@ -1,0 +1,106 @@
+.modal-header {
+    display: flex;
+    z-index: 1;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+
+    p {
+        color: #fff;
+        font-size: 15px;
+        padding-top: 15px;
+    }
+
+
+}
+
+.modal-header::after {
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    content: "";
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0.7);
+}
+
+.modal-body {
+    padding: 50px;
+    font-size: 16px;
+    .login-signup-btn {
+        padding-bottom: 30px;
+
+        .login-signup-buttons {
+            overflow: hidden;
+            border-radius: 30px;
+            display: inline-block !important;
+            border: 1px solid #e5e5e5;
+        }
+
+        li a::after {
+            top: 0;
+            right: 0;
+            width: 1px;
+            content: "";
+            height: 100%;
+            position: absolute;
+            background-color: #e5e5e5;
+        }
+
+        .nav-link.active {
+            color: white;
+            background-color: $primary-color;
+        }
+    }
+
+    .tab-content {
+        input {
+            width: 100%;
+            height: 50px;
+            border: none;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            background-color: #efeff0;
+            outline: none;
+            font-size: 16px;
+        }
+
+        span {
+            float: left;
+            color: #555555;
+            font-size: 16px;
+
+            input {
+                width: 15px;
+                height: 15px;
+                margin-right: 12px;
+            }
+
+        }
+
+        a {
+            color: #000;
+            float: right;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        button {
+            color: #fff;
+            width: 100%;
+            height: 50px;
+            border: none;
+            font-weight: 700;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            background-color: #ff5520;
+            outline: none;
+        }
+
+    }
+}

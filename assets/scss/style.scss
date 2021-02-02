@@ -1,7 +1,8 @@
-*{
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;600;700&family=Roboto:wght@400;500;700;900&display=swap');
 @import"variables";
 @import"website";
-@import"navbar";
-@import"banner";
+@import 'components/aboutus';
+@import 'components/banner';
+@import 'components/navbar';
+@import'components/modal';
+
