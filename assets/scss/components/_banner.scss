@@ -1,5 +1,5 @@
 .container {
-    max-width: 1200px;
+    //max-width: 1200px;
 
     .banner-btn-wrap {
         transition: all .4s linear;
@@ -36,7 +36,7 @@
                     content: "";
                     position: absolute;
                     transform: skew(50deg);
-                    transition-duration: 0.6s;
+                    transition-duration: 0.4s;
                     transform-origin: top left;
                     background-color: $primary-color;
                     z-index: -1;
@@ -44,7 +44,7 @@
 
                 &:hover::after {
 
-                    transition: all .4s linear !important;
+                    transition: all .3s linear !important;
                     height: 100%;
                     width: 150%;
                 }
