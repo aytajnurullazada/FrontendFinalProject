@@ -1,31 +1,132 @@
 .container {
     max-width: 1200px;
+
+    .banner-btn-wrap {
+        transition: all .4s linear;
+
+        .banner-btn {
+            z-index: 1;
+            transition: all .4s linear;
+            float: left;
+            margin-right: 35px;
+
+            .all-courses {
+                position: relative;
+                text-align: center;
+                color: #fff;
+                width: 160px;
+                height: 55px;
+                display: block;
+                overflow: hidden;
+                font-weight: 700;
+                line-height: 55px;
+                border-radius: 40px;
+                background-color: $secondary-color;
+                font-size: 16px;
+                z-index: 1;
+                cursor: pointer;
+                color: #fff;
+                transition: all .4s linear !important;
+
+                &::after {
+                    top: 0;
+                    width: 0;
+                    left: -40%;
+                    height: 100%;
+                    content: "";
+                    position: absolute;
+                    transform: skew(50deg);
+                    transition-duration: 0.6s;
+                    transform-origin: top left;
+                    background-color: $primary-color;
+                    z-index: -1;
+                }
+
+                &:hover::after {
+
+                    transition: all .4s linear !important;
+                    height: 100%;
+                    width: 150%;
+                }
+            }
+        }
+
+
+    }
+
+    .play-btn {
+        &:hover {
+            background-color: #e3002a;
+        }
+
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin-top: 5px;
+        line-height: 50px;
+        border-radius: 100%;
+        transition: 0.3s all ease-in-out;
+        background-color: #0000fe;
+
+        a {
+            color: #fff;
+            width: 100%;
+            display: block;
+            font-size: 16px;
+
+            .fas-fa {
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+
+            }
+        }
+
+        .btn-border {
+            border: 2px solid rgba(0, 0, 0, 0.15);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 60px;
+            top: 0;
+            left: 0;
+            animation-play-state: running;
+
+            .border2 {
+                animation-delay: 1.3s;
+            }
+
+            .border3 {
+                animation-delay: 2.6s;
+            }
+        }
+    }
+
+
+
+    p {
+        color: #4f4f4f;
+        font-size: 20px;
+        line-height: 1.6;
+        padding-bottom: 40px;
+    }
 }
 
 .banner-content {
     background-color: #f7f7f7;
     z-index: 1;
-    max-width: 690px;
     overflow: hidden;
-    padding: 230px 0px 180px;
+    padding: 180px 0px 180px;
 
 
     .image-banner {
         position: absolute;
-        right: -30px;
+        right: -140px;
         top: 0px;
     }
 
     .banner-txt {
 
-        h1 {
-            color: #000;
-            font-size: 58px;
-            font-weight: 700;
-            line-height: 1.2;
-            padding-bottom: 35px;
-            font-family: $secondary-font;
-        }
+
 
         .banner-tag {
             padding-right: 30px;
@@ -36,9 +137,11 @@
             height: 50px;
 
             p {
+                color: #000000;
+                font-size: 16px;
+                font-weight: 500;
                 padding-bottom: 0;
                 display: inline-block;
-                font-size: 16px;
             }
 
             span {
@@ -53,4 +156,24 @@
             }
         }
     }
+
+    h1 {
+        color: #000;
+        font-size: 58px;
+        font-weight: 700 !important;
+        line-height: 1.2;
+        padding-bottom: 35px;
+        font-family: $secondary-font;
+    }
+}
+
+.dot {
+        z-index: 1;
+        width: 7px;
+        height: 7px;
+        top: 200px;
+        left: 150px;
+        background-color: #00a4ff;
+
+    
 }
