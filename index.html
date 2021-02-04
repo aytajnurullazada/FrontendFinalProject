@@ -7,6 +7,13 @@
   <script src="https://kit.fontawesome.com/560752f518.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/css/style.min.css">
   <title>Document</title>
 </head>
@@ -108,78 +115,79 @@
     </nav>
   </header>
   <!-- ****************************************************** -->
+  <section class="yle-modal">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- header  -->
+          <div class="modal-header position-relative" style="background-image: url(/assets/img/lg-bg.jpg)">
+            <div class="modal-txt text-center">
+              <a href="#">
+                <img src="/assets/img/logo4.png" alt="">
+              </a>
+              <p>
+                Boamco laboris nisi ut aliquip ex ea commodo
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <!-- header  -->
-        <div class="modal-header position-relative" style="background-image: url(/assets/img/lg-bg.jpg)">
-          <div class="modal-txt text-center">
-            <a href="#">
-              <img src="/assets/img/logo4.png" alt="">
-            </a>
-            <p>
-              Boamco laboris nisi ut aliquip ex ea commodo
-
-              conseq nderit in voluptate velit esse
-            </p>
-          </div>
-        </div>
-        <!-- end of header -->
-        <!-- body -->
-        <div class="modal-body">
-          <!-- sign up & log in -->
-          <div class="login-signup">
-            <div class="login-signup-btn ul-li">
-              <ul class="nav text-center nav-tabs login-signup-buttons ">
-                <li class="nav-item nav-link text-capitalize active show">
-                  <a href="#">
-                    Login
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#">
-                    Sign Up
-                  </a>
-                </li>
-              </ul>
+                conseq nderit in voluptate velit esse
+              </p>
             </div>
           </div>
-          <!-- Content -->
-          <div id="tabsContent" class="tab-content">
-            <div id="login" class="tab-pane fade active show">
-              <div class="login-content text-center">
-                <form action="#">
-                  <input type="text" placeholder="Username or email">
-                  <input type="password" placeholder="Password">
-                  <div class="login-label">
-                    <span>
-                      <input type="checkbox">
-                      Remember me
-                    </span>
+          <!-- end of header -->
+          <!-- body -->
+          <div class="modal-body">
+            <!-- sign up & log in -->
+            <div class="login-signup">
+              <div class="login-signup-btn ul-li">
+                <ul class="nav text-center nav-tabs login-signup-buttons ">
+                  <li class="nav-item nav-link text-capitalize active show">
                     <a href="#">
-                      Forget Password?
+                      Login
                     </a>
-                  </div>
-                  <button type="submit">
-                    Submit
-                  </button>
-
-                </form>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#">
+                      Sign Up
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
+            <!-- Content -->
+            <div id="tabsContent" class="tab-content">
+              <div id="login" class="tab-pane fade active show">
+                <div class="login-content text-center">
+                  <form action="#">
+                    <input type="text" placeholder="Username or email">
+                    <input type="password" placeholder="Password">
+                    <div class="login-label">
+                      <span>
+                        <input type="checkbox">
+                        Remember me
+                      </span>
+                      <a href="#">
+                        Forget Password?
+                      </a>
+                    </div>
+                    <button type="submit">
+                      Submit
+                    </button>
+
+                  </form>
+                </div>
+              </div>
+
+            </div>
+
 
           </div>
+          <div class="modal-footer">
 
-
-        </div>
-        <div class="modal-footer">
-
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- ****************************************************** -->
 
   <!-- Main Section -->
@@ -211,11 +219,11 @@
                 Collaborate Consulting exists to find the place where to being seemingly disparate interests meet. This
                 undergraduate course teaches students what it was like.
               </p>
-              <div class="banner-btn-wrap">
-                <div class="banner-btn">
-                    <a href="#" class="all-courses">
-                      All Courses
-                    </a>
+              <div class="yle-btn-wrap">
+                <div class="yle-btn">
+                  <a href="#" class="all-courses">
+                    All Courses
+                  </a>
                 </div>
                 <div class="play-btn text-center position-relative">
                   <a class="video-box" href="https://www.youtube.com/watch?v=gUYjYEGbxEY">
@@ -246,11 +254,165 @@
             Categories
           </p>
           <span>
-           _  Top Categories  _
+            _ Top Categories _
           </span>
           <h2>
-            We have many courses in our <br> top Categories 
+            We have many courses in our <br> top Categories
           </h2>
+        </div>
+        <div class="category-slide">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="category-img-txt">
+                <div class="category-icon-txt">
+                  <div class="category-icon">
+                    <i class="fas fa-atom"></i>
+                  </div>
+                  <div class="category-txt">
+                    <h3>
+                      <a href="#">
+                        Computer Science
+                      </a>
+                    </h3>
+                    <span>14 Courses</span>
+                  </div>
+                </div>
+                <div class="category-img text-center">
+                  <img src="/assets/img/ct1.jpg" alt="">
+                </div>
+                <div class="category-hover-icon text-center">
+                  <a href="#"> 
+                    <i class="fas fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="category-img-txt">
+                <div class="category-icon-txt">
+                  <div class="category-icon">
+                    <i class="fas fa-pencil-ruler"></i>
+                  </div>
+                  <div class="category-txt">
+                    <h3>
+                      <a href="#">
+                        UI/UX Design
+                      </a>
+                    </h3>
+                    <span>14 Courses</span>
+                  </div>
+                </div>
+                <div class="category-img text-center">
+                  <img src="/assets/img/ct2.jpg" alt="">
+                </div>
+                <div class="category-hover-icon text-center">
+                  <a href="#"> 
+                    <i class="fas fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="category-img-txt">
+                <div class="category-icon-txt">
+                  <div class="category-icon">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <div class="category-txt">
+                    <h3>
+                      <a href="#">
+                        Language Learning
+                      </a>
+                    </h3>
+                    <span>14 Courses</span>
+                  </div>
+                </div>
+                <div class="category-img text-center">
+                  <img src="/assets/img/ct3.jpg" alt="">
+                </div>
+                <div class="category-hover-icon text-center">
+                  <a href="#"> 
+                    <i class="fas fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="category-img-txt">
+                <div class="category-icon-txt">
+                  <div class="category-icon">
+                    <i class="fas fa-atom"></i>
+                  </div>
+                  <div class="category-txt">
+                    <h3>
+                      <a href="#">
+                        Computer Science
+                      </a>
+                    </h3>
+                    <span>14 Courses</span>
+                  </div>
+                </div>
+                <div class="category-img text-center">
+                  <img src="/assets/img/ct1.jpg" alt="">
+                </div>
+                <div class="category-hover-icon text-center">
+                  <a href="#"> 
+                    <i class="fas fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="category-img-txt">
+                <div class="category-icon-txt">
+                  <div class="category-icon">
+                    <i class="fas fa-pencil-ruler"></i>
+                  </div>
+                  <div class="category-txt">
+                    <h3>
+                      <a href="#">
+                        UI/UX Design
+                      </a>
+                    </h3>
+                    <span>14 Courses</span>
+                  </div>
+                </div>
+                <div class="category-img text-center">
+                  <img src="/assets/img/ct2.jpg" alt="">
+                </div>
+                <div class="category-hover-icon text-center">
+                  <a href="#"> 
+                    <i class="fas fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="category-img-txt">
+                <div class="category-icon-txt">
+                  <div class="category-icon">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <div class="category-txt">
+                    <h3>
+                      <a href="#">
+                        Language Learning
+                      </a>
+                    </h3>
+                    <span>14 Courses</span>
+                  </div>
+                </div>
+                <div class="category-img text-center">
+                  <img src="/assets/img/ct3.jpg" alt="">
+                </div>
+                <div class="category-hover-icon text-center">
+                  <a href="#"> 
+                    <i class="fas fa-plus"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
         </div>
       </div>
     </section>
@@ -262,10 +424,10 @@
             Course
           </p>
           <span>
-           _  Our Popular Courses  _
+            _ Our Popular Courses _
           </span>
           <h2>
-            The largest selection of courses <br> for learning for students 
+            The largest selection of courses <br> for learning for students
           </h2>
         </div>
         <div class="course-content">
@@ -291,41 +453,41 @@
                     <div class="course-meta">
                       <a href="#">
                         <i class="fas fa-file"></i>
-                       <span>14 Lessons</span> 
+                        <span>14 Lessons</span>
                       </a>
                       <a href="#">
                         <i class="fas fa-user"></i>
                         <span>20 Students</span>
                       </a>
                     </div>
-                    
+
                   </div>
                   <div class="course-rate">
-                   <div class="rate-stars float-left">
-                    <ul>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                    </ul>
-                    <span>(12 Votes)</span>
-                   </div>
-                   <div class="course-btn float-right">
-                    <a href="#">
-                      <i class="fas fa-chevron-right"></i>
-                    </a>
-                   </div>
+                    <div class="rate-stars float-left">
+                      <ul>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                      </ul>
+                      <span>(12 Votes)</span>
+                    </div>
+                    <div class="course-btn float-right">
+                      <a href="#">
+                        <i class="fas fa-chevron-right"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -351,41 +513,41 @@
                     <div class="course-meta">
                       <a href="#">
                         <i class="fas fa-file"></i>
-                       <span>14 Lessons</span> 
+                        <span>14 Lessons</span>
                       </a>
                       <a href="#">
                         <i class="fas fa-user"></i>
                         <span>20 Students</span>
                       </a>
                     </div>
-                    
+
                   </div>
                   <div class="course-rate">
-                   <div class="rate-stars float-left">
-                    <ul>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                    </ul>
-                    <span>(12 Votes)</span>
-                   </div>
-                   <div class="course-btn float-right">
-                    <a href="#">
-                      <i class="fas fa-chevron-right"></i>
-                    </a>
-                   </div>
+                    <div class="rate-stars float-left">
+                      <ul>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                      </ul>
+                      <span>(12 Votes)</span>
+                    </div>
+                    <div class="course-btn float-right">
+                      <a href="#">
+                        <i class="fas fa-chevron-right"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -411,41 +573,41 @@
                     <div class="course-meta">
                       <a href="#">
                         <i class="fas fa-file"></i>
-                       <span>14 Lessons</span> 
+                        <span>14 Lessons</span>
                       </a>
                       <a href="#">
                         <i class="fas fa-user"></i>
                         <span>20 Students</span>
                       </a>
                     </div>
-                    
+
                   </div>
                   <div class="course-rate">
-                   <div class="rate-stars float-left">
-                    <ul>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                    </ul>
-                    <span>(12 Votes)</span>
-                   </div>
-                   <div class="course-btn float-right">
-                    <a href="#">
-                      <i class="fas fa-chevron-right"></i>
-                    </a>
-                   </div>
+                    <div class="rate-stars float-left">
+                      <ul>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                      </ul>
+                      <span>(12 Votes)</span>
+                    </div>
+                    <div class="course-btn float-right">
+                      <a href="#">
+                        <i class="fas fa-chevron-right"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -471,41 +633,41 @@
                     <div class="course-meta">
                       <a href="#">
                         <i class="fas fa-file"></i>
-                       <span>14 Lessons</span> 
+                        <span>14 Lessons</span>
                       </a>
                       <a href="#">
                         <i class="fas fa-user"></i>
                         <span>20 Students</span>
                       </a>
                     </div>
-                    
+
                   </div>
                   <div class="course-rate">
-                   <div class="rate-stars float-left">
-                    <ul>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                    </ul>
-                    <span>(12 Votes)</span>
-                   </div>
-                   <div class="course-btn float-right">
-                    <a href="#">
-                      <i class="fas fa-chevron-right"></i>
-                    </a>
-                   </div>
+                    <div class="rate-stars float-left">
+                      <ul>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                      </ul>
+                      <span>(12 Votes)</span>
+                    </div>
+                    <div class="course-btn float-right">
+                      <a href="#">
+                        <i class="fas fa-chevron-right"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -531,41 +693,41 @@
                     <div class="course-meta">
                       <a href="#">
                         <i class="fas fa-file"></i>
-                       <span>14 Lessons</span> 
+                        <span>14 Lessons</span>
                       </a>
                       <a href="#">
                         <i class="fas fa-user"></i>
                         <span>20 Students</span>
                       </a>
                     </div>
-                    
+
                   </div>
                   <div class="course-rate">
-                   <div class="rate-stars float-left">
-                    <ul>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                    </ul>
-                    <span>(12 Votes)</span>
-                   </div>
-                   <div class="course-btn float-right">
-                    <a href="#">
-                      <i class="fas fa-chevron-right"></i>
-                    </a>
-                   </div>
+                    <div class="rate-stars float-left">
+                      <ul>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                      </ul>
+                      <span>(12 Votes)</span>
+                    </div>
+                    <div class="course-btn float-right">
+                      <a href="#">
+                        <i class="fas fa-chevron-right"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -591,41 +753,41 @@
                     <div class="course-meta">
                       <a href="#">
                         <i class="fas fa-file"></i>
-                       <span>14 Lessons</span> 
+                        <span>14 Lessons</span>
                       </a>
                       <a href="#">
                         <i class="fas fa-user"></i>
                         <span>20 Students</span>
                       </a>
                     </div>
-                    
+
                   </div>
                   <div class="course-rate">
-                   <div class="rate-stars float-left">
-                    <ul>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                    </ul>
-                    <span>(12 Votes)</span>
-                   </div>
-                   <div class="course-btn float-right">
-                    <a href="#">
-                      <i class="fas fa-chevron-right"></i>
-                    </a>
-                   </div>
+                    <div class="rate-stars float-left">
+                      <ul>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                      </ul>
+                      <span>(12 Votes)</span>
+                    </div>
+                    <div class="course-btn float-right">
+                      <a href="#">
+                        <i class="fas fa-chevron-right"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -651,41 +813,41 @@
                     <div class="course-meta">
                       <a href="#">
                         <i class="fas fa-file"></i>
-                       <span>14 Lessons</span> 
+                        <span>14 Lessons</span>
                       </a>
                       <a href="#">
                         <i class="fas fa-user"></i>
                         <span>20 Students</span>
                       </a>
                     </div>
-                    
+
                   </div>
                   <div class="course-rate">
-                   <div class="rate-stars float-left">
-                    <ul>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                    </ul>
-                    <span>(12 Votes)</span>
-                   </div>
-                   <div class="course-btn float-right">
-                    <a href="#">
-                      <i class="fas fa-chevron-right"></i>
-                    </a>
-                   </div>
+                    <div class="rate-stars float-left">
+                      <ul>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                      </ul>
+                      <span>(12 Votes)</span>
+                    </div>
+                    <div class="course-btn float-right">
+                      <a href="#">
+                        <i class="fas fa-chevron-right"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -711,51 +873,53 @@
                     <div class="course-meta">
                       <a href="#">
                         <i class="fas fa-file"></i>
-                       <span>14 Lessons</span> 
+                        <span>14 Lessons</span>
                       </a>
                       <a href="#">
                         <i class="fas fa-user"></i>
                         <span>20 Students</span>
                       </a>
                     </div>
-                    
+
                   </div>
                   <div class="course-rate">
-                   <div class="rate-stars float-left">
-                    <ul>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                      <li>
-                        <i class="fas fa-star"></i>
-                      </li>
-                    </ul>
-                    <span>(12 Votes)</span>
-                   </div>
-                   <div class="course-btn float-right">
-                    <a href="#">
-                      <i class="fas fa-chevron-right"></i>
-                    </a>
-                   </div>
+                    <div class="rate-stars float-left">
+                      <ul>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                        <li>
+                          <i class="fas fa-star"></i>
+                        </li>
+                      </ul>
+                      <span>(12 Votes)</span>
+                    </div>
+                    <div class="course-btn float-right">
+                      <a href="#">
+                        <i class="fas fa-chevron-right"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="yle-btn text-center">
-            <a href="#">
-              All Courses
-              <i class="fas fa-arrow-right"></i>
-            </a>
+          <div class="yle-btn-wrap text-center">
+            <div class="yle-btn">
+              <a href="#">
+                All Courses
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
 
           </div>
         </div>
@@ -764,9 +928,16 @@
   </main>
   <footer></footer>
   <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
   </script>
+  
   <script src="/assets/js/main.js"></script>
 
 </body>

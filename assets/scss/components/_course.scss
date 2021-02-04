@@ -1,15 +1,18 @@
 .course-section {
     padding: 95px 0px 100px;
     background-color: #f7f7f7;
-    .course-content{
+
+    .course-content {
         margin-top: 25px;
-        .row{
+
+        .row {
             //display: flex;
             //flex-wrap: wrap;
             margin-right: -15px;
             margin-left: -15px;
         }
     }
+
     p {
         color: white !important;
         opacity: 0.7 !important;
@@ -26,10 +29,16 @@
         transition: 0.3s all ease-in-out;
         max-width: 300px;
 
-       
+
+
         .course-img {
             border-radius: 5px;
             overflow: hidden;
+
+            img {
+                transition: 0.5s all ease-in-out;
+            }
+
         }
 
         span,
@@ -47,7 +56,7 @@
 
         .course-txt {
             font-size: 16px;
-           
+
             .course-title {
                 margin-bottom: 15px;
                 padding-bottom: 15px;
@@ -60,10 +69,12 @@
                     font-weight: 700;
                     line-height: 1.444;
                     padding-bottom: 8px;
-                    transition: 0.3s all ease-in-out;
+                    //transition: 0.3s all ease-in-out;
 
                     a {
                         color: black;
+                        transition: 0.3s all ease-in-out;
+
                     }
                 }
 
@@ -86,7 +97,7 @@
 
         .rate-stars {
             margin-right: 5px;
-            display: inline-block;
+            //display: inline-block;
             float: left;
             font-size: 16px;
             font-family: $primary-font;
@@ -111,23 +122,63 @@
 
         }
 
-        // .course-btn {
-        //     height: 30px;
-        //     width: 30px;
-        //     line-height: 30px;
-        //     text-align: center;
-        //     border-radius: 100%;
-        //     background-color: #0000fe;
-        //     transition: 0.3s all ease-in-out;
-        //     float: right;
+        .course-btn {
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 100%;
+            background-color: #0000fe;
+            transition: 0.3s all ease-in-out;
+            float: right;
 
-        //     a {
-        //         color: #fff;
-        //         width: 100%;
-        //         display: block;
-        //         font-size: 14px;
-        //     }
-        // }
+            a {
+                color: #fff;
+                width: 100%;
+                display: block;
+                font-size: 14px;
+
+            }
+            i{
+                animation-duration: 0.3s;
+                animation-timing-function: ease;
+                animation-delay: 0s;
+                animation-iteration-count: 1;
+                animation-direction: normal;
+                animation-fill-mode: forwards;
+                animation-play-state: running;
+                animation-name: toBottomFromTop;
+            }
+
+        }
     }
 
+}
+
+.course-card {
+    &:hover {
+        box-shadow: -3.285px 20.741px 51px 0px #00002f33 !important;
+        h3 {
+            a {
+                color: $secondary-color !important;
+            }
+
+        }
+
+        .course-img {
+            img {
+                transform: scale(1.1);
+                transition: 0.6s all ease-in-out;
+            }
+
+        }
+
+        .course-btn {
+            background-color: $secondary-color;
+
+            i {
+                animation: toBottomFromTop 0.3s forwards;
+            }
+        }
+    }
 }
