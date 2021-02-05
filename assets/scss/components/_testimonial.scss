@@ -1,0 +1,123 @@
+.testimonial-section {
+    padding: 95px 0px 100px;
+
+    .test-slide {
+        .owl-stage{
+            margin: 35px;
+            //margin-bottom: 35px;
+        }
+        .item {
+            width: 270px;
+            margin-right: 30px;
+
+            .test-img-txt {
+                overflow: hidden;
+                border-radius: 10px;
+                background-color: #fff;
+                padding: 40px 30px 25px;
+                transition: 0.3s all ease-in-out;
+                box-shadow: 0px 12px 35px 0px #0c0c0c0f;
+                position: relative;
+
+                &:hover {
+                    transform: translateY(-25px);
+                    box-shadow: 0px 36px 35px 0px #0c0c0c1a;
+                    .test-icon{
+                        i{
+                            color: $secondary-color;
+                        }
+                    }
+                }
+
+                .test-icon {
+                    top: 15px;
+                    right: 15px;
+                    position: absolute;
+
+                    i {
+                        color: #efefef;
+                        line-height: 1;
+                        font-size: 30px;
+                        transition: 0.3s all ease-in-out;
+                    }
+                }
+
+                .test-txt {
+                    h3 {
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: #0000fe;
+                        padding-bottom: 15px;
+                    }
+
+                    p {
+                        color: #666666;
+                        font-size: 16px;
+                        padding-bottom: 0px;
+                    }
+                }
+
+                .test-author {
+                    margin-top: 20px;
+                    //display: block;
+
+                    .author-img {
+                        width: 65px;
+                        height: 65px;
+                        overflow: hidden;
+                        margin-right: 12px;
+                        border-radius: 100%;
+                        position: relative;
+                        float: left;
+
+                        &::before {
+                            top: 0;
+                            left: 0;
+                            width: 65px;
+                            content: "";
+                            z-index: 1;
+                            height: 65px;
+                            border-radius: 100%;
+                            position: absolute;
+                            border: 3px solid #0000fe;
+                        }
+
+                        &::after {
+                            top: 3px;
+                            left: 3px;
+                            width: 60px;
+                            content: "";
+                            height: 60px;
+                            position: absolute;
+                            border-radius: 100%;
+                            border: 5px solid #fff;
+                        }
+                    }
+
+                    .author-txt {
+                        display: block;
+                        padding-top: 10px;
+
+                        h4 {
+                            color: #000 !important;
+                            font-size: 14px !important;
+                            font-weight: 700;
+
+                            a {
+                                color: #000;
+                            }
+                        }
+
+                        span {
+                            color: #888888;
+                            font-size: 14px;
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+    }
+}
