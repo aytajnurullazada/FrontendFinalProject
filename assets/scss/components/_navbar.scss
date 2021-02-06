@@ -1,164 +1,183 @@
 header {
-    padding: 10px 0px;
-
-    .nav-item {
-        position: relative;
-        margin-left: 70px;
-        transition: all 0.4s ease-in-out;
-        .nav-link {
-
-            &::after {
-                top: 42px;
-                left: 39px;
-                width: 0px;
-                content: "";
-                height: 5px;
-                position: absolute;
-                border-radius: 100%;
-                background-color: $primary-color;
-                transition: 0.3s all ease-in-out;
-
-            }
-        }
-
-        &.has-children {
-            position: relative;
-
-            &::after {
-                top: 10px;
-                color: $secondary-color;
-                right: -2px;
-                content: "+";
-                font-size: 18px;
-                font-weight: 700;
-                position: absolute;
-                transition: 0.3s all ease-in-out;
-            }
-
-        }
-
-        &:hover::before {
-            width: 22px;
-
-        }
-
-        &::before {
-            left: 14px;
-            top: 42px;
-            width: 0;
-            height: 5px;
-            content: "";
-            position: absolute;
-            border-radius: 30%;
-            background-color: $primary-color;
-            transition: 0.3s all ease-in-out;
-        }
-
-        &:hover .nav-link::after {
-            width: 5px;
-        }
-    }
+    //padding: 10px 0px;
+    width: 100% !important;
+    z-index: 10;
+    position: fixed;
+    background: #fff !important;
+    animation-duration: 0.7s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    animation-timing-function: ease;
+    transition: 0.3s all ease-in-out;
 
 
-
-
-
-    .actions {
-        padding-top: 15px;
-        display: contents;
-
-        button {
-            padding: 0;
-            font-size: 16px;
-            border: none;
-            color: #5a5a5a;
-            margin: 0px 15px;
-            background-color: transparent;
-            transition: 0.3s all ease-in-out;
-            cursor: pointer;
-            outline: none;
-        }
-    }
-
-    a {
-        color: black !important;
-        font-weight: 700;
-        padding-bottom: 30px;
-        position: relative;
-        font-size: 16px;
-
-
-    }
-
-    .fas:hover {
-        color: $primary-color;
-    }
-
-
-    .line {
-        color: #d9d9d9;
-        font-size: 21px;
-    }
-
-    .dropdown-menu {
-        top: 65px;
-        left: 0;
-        opacity: 0;
+    .navbar {
+        position: fixed;
+        background-color: white !important;
         z-index: 2;
-        margin: 0px;
-        padding: 0px;
-        height: auto;
-        width: 200px;
-        border: none;
-        display: block;
-        border-radius: 0;
-        overflow: hidden;
-        visibility: hidden;
-        position: absolute;
-        background-color: #fff;
-        transition: all 0.4s ease-in-out;
-        border-bottom: 2px solid #e3002a;
+        margin-top: 0 !important;
+        width: 100% !important;
+        padding: 12px 0px;
+        box-shadow: 0px 0px 18px 1px #0000001a;
 
-        li {
-            transition: all 0.4s ease-in-out;
-            a {
-                width: 100%;
-                display: block;
-                font-size: 14px;
-                padding: 10px 25px;
-                position: relative;
-                transition: 0.9s all ease-in-out;
+        .container {
+            width: 100% !important;
+
+            .logo {
+                margin-right: 90px;
+                float: left;
             }
 
-            &:hover {
-                background-color: $primary-color;
-                color: white !important;
+            .navbar-collapse {
+                padding-top: 15px;
+
+                .nav-item {
+                    position: relative;
+                    margin-left: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all .4s ease-in-out;
+
+                    .dropdown-menu {
+                        top: 65px;
+                        left: 0;
+                        opacity: 0;
+                        z-index: 2;
+                        margin: 0px;
+                        padding: 0px;
+                        height: auto;
+                        width: 200px;
+                        border: none;
+                        display: block;
+                        border-radius: 0;
+                        overflow: hidden;
+                        visibility: hidden;
+                        position: absolute;
+                        background-color: #fff;
+                        transition: all 0.4s ease-in-out;
+                        border-bottom: 2px solid #e3002a;
+
+                        li {
+                            transition: all 0.4s ease-in-out;
+
+                            a {
+                                width: 100%;
+                                display: block;
+                                font-size: 14px;
+                                padding: 10px 25px;
+                                position: relative;
+                                transition: 10s all ease-in-out;
+                            }
+
+                            &:hover {
+                                background-color: $primary-color !important;
+                                color: white !important;
+                            }
+                        }
+                    }
+
+                    .nav-link {
+
+                        color: black !important;
+                        font-weight: 700;
+                        padding-bottom: 16px;
+                        position: relative;
+                        font-size: 16px;
+
+                        &::after {
+                            top: 42px;
+                            left: 39px;
+                            width: 0px;
+                            content: "";
+                            height: 5px;
+                            position: absolute;
+                            border-radius: 100%;
+                            background-color: $primary-color;
+                            transition: 0.3s all ease-in-out;
+
+                        }
+                    }
+
+                    &.has-children {
+                        position: relative;
+
+                        &::after {
+                            top: 10px;
+                            color: $secondary-color;
+                            right: -2px;
+                            content: "+";
+                            font-size: 18px;
+                            font-weight: 700;
+                            position: absolute;
+                            transition: 0.3s all ease-in-out;
+                        }
+
+                    }
+
+                    &:hover::before {
+                        width: 22px;
+
+                    }
+
+                    &::before {
+                        left: 14px;
+                        top: 42px;
+                        width: 0;
+                        height: 5px;
+                        content: "";
+                        position: absolute;
+                        border-radius: 30%;
+                        background-color: $primary-color;
+                        transition: 0.3s all ease-in-out;
+                    }
+
+                    &:hover .nav-link::after {
+                        width: 5px;
+                    }
+
+                    &:hover .dropdown-menu {
+                        transition: all 0.4s ease-in-out;
+                        border-bottom: 2px solid $primary-color;
+                        top: 65px;
+                        opacity: 1;
+                        visibility: visible;
+                        display: block;
+                    }
+                }
+
+                .actions {
+                    padding-top: 15px;
+                    display: contents;
+                    float: right;
+                    //position: relative;
+                    //display: inline-block;
+
+                    button {
+                        padding: 0;
+                        font-size: 16px;
+                        border: none;
+                        color: #5a5a5a;
+                        margin: 0px 15px;
+                        background-color: transparent;
+                        transition: 0.3s all ease-in-out;
+                        cursor: pointer;
+                        outline: none;
+                    }
+
+                    .fas:hover {
+                        color: $primary-color;
+                    }
+
+
+                    .line {
+                        color: #d9d9d9;
+                        font-size: 21px;
+                    }
+                }
             }
         }
-    }
-
-    .clearfix::after {
-        display: block;
-        clear: both;
-        content: "";
-    }
-
-    .nav-item:hover .dropdown-menu {
-        transition: all 0.4s ease-in-out;
-        border-bottom: 2px solid $primary-color;
-        top: 40px;
-        opacity: 1;
-        visibility: visible;
-    }
-
-    @media all and (min-width: 992px) {
-        .navbar .nav-item .dropdown-menu {
-            display: none;
-        }
-
-        .navbar .nav-item:hover .dropdown-menu {
-            display: block;
-        }
 
     }
+
 }
