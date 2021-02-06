@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/560752f518.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <div class="logo">
+                    <img src="/assets/img/logo3.png" alt="">
+                </div>
+
+                <div class="collapse navbar-collapse float-left ul-li" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item has-children">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu clearfix" aria-labelledby="navbarDropdown">
+                                <li><a target="_blank" class="dropdown-item" href="#">Home Page 1</a></li>
+                                <li><a target="_blank" class="dropdown-item" href="#">Home Page 2</a></li>
+                                <li><a target="_blank" class="dropdown-item" href="#">Home Page 3</a></li>
+                                <li><a target="_blank" class="dropdown-item" href="#">Home Page 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Course
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Course</a></li>
+                                <li><a class="dropdown-item" href="#">Course Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Galery</a></li>
+                                <li><a class="dropdown-item" href="#">Contact</a></li>
+                                <li><a class="dropdown-item" href="#">Event</a></li>
+                                <li><a class="dropdown-item" href="#">Event Details</a></li>
+                                <li><a class="dropdown-item" href="#">Faq</a></li>
+                                <li><a class="dropdown-item" href="#">404</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Blog 1</a></li>
+                                <li><a class="dropdown-item" href="#">Blog 2</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Details 1</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Deatils 2</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Instroctur
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Instroctur</a></li>
+                                <li><a class="dropdown-item" href="#">Instroctur Details</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="actions">
+                        <div class="cart">
+                            <button>
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <span class="line">|</span>
+                        <div class="user">
+                            <button>
+                                <i class="fas fa-user-alt" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- End of header section -->
+    <main>
+        <!-- Breadcrumb section -->
+        <section class="breadcrumb position-relative">
+            <span class="overlay position-absolute"></span>
+            <div class="container">
+                <div class="breadcrumb-content text-center">
+                    <h2>About Us</h2>
+                    <div class="item ul-li">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="active">
+                                Library
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of breadcrumb section -->
+
+        <!-- About us section -->
+        <section class="aboutus">
+            <div class="container">
+                <div class="aboutus-content">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="about-img">
+                                <img src="/assets/img/abp.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-txt">
+                                <div class="title-section position-relative">
+                                    <p class="title-watermark text-start">
+                                        Avout Us
+                                    </p>
+                                    <span>
+                                        _ About our University _
+                                    </span>
+                                    <h2>
+                                        We are innovative educational institution for students.
+                                    </h2>
+                                    <p class="aboutus-text">
+                                        Expanding significance of internet promoting. or lipsum as it is some times
+                                        known, is dummy text used in laying out print, grap to an corpt or web designs.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="aboutus-video">
+                                <div class="video-cover position-relative float-left">
+                                    <img src="/assets/img/ab-v.jpg" alt="">
+                                    <a href="https://www.youtube.com/watch?v=HndV87XpkWg">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                </div>
+                                <div class="video-txt">
+                                    <h3>
+                                        Check how we clean!
+                                    </h3>
+                                    <p class="txt">
+                                        Reference site about Lorem Ipsum, giving information on its origins.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of about us section -->
+
+        <!-- Registration section -->
+        <section class="register position-relative">
+            <div class="container">
+                <div class="register-content position-relative">
+                    <span class="register-img position-absolute">
+                        <img src="/assets/img/rm1.png" alt="">
+                    </span>
+                    <div class="register-txt">
+                        <h3>Get 10% Off on registration fee for
+                            <span>COVID 19</span>
+                        </h3>
+                        <p>The last step you need to take to be allowed to follow a course is to be registered on it.
+                        </p>
+                        <div class="yle-btn-wrap text-center">
+                            <div class="yle-btn">
+                                <a href="#">
+                                    Register now
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of registration section -->
+
+        <!-- Testimonial section -->
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="title-section text-center position-relative">
+                    <p class="title-watermark">
+                        Testimonials
+                    </p>
+                    <span>
+                        _ Testimonials _
+                    </span>
+                    <h2>
+                        We have many courses in our <br> top Categories
+                    </h2>
+                </div>
+                <div class="test-content">
+                    <div class="test-slide">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="test-img-txt">
+                                    <div class="test-icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <div class="test-txt">
+                                        <h3>
+                                            Best Support ever!
+                                        </h3>
+                                        <p>
+                                            5 stars for design quality, but also for prompt new customer service and
+                                            great attention to details work.
+                                        </p>
+                                    </div>
+                                    <div class="test-author">
+                                        <div class="author-img">
+                                            <img src="/assets/img/testi-a1.jpg" alt="">
+                                        </div>
+                                        <div class="author-txt">
+                                            <h4>
+                                                <a href="#">
+                                                    Alina Lora
+                                                </a>
+                                                <br>
+                                                <span>Formar Manager</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="test-img-txt">
+                                    <div class="test-icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <div class="test-txt">
+                                        <h3>
+                                            Good cleaning service
+                                        </h3>
+                                        <p>
+                                            5 stars for design quality, but also for prompt new customer service and
+                                            great attention to details work.
+                                        </p>
+                                    </div>
+                                    <div class="test-author">
+                                        <div class="author-img">
+                                            <img src="/assets/img/testi-a2.jpg" alt="">
+                                        </div>
+                                        <div class="author-txt">
+                                            <h4>
+                                                <a href="#">
+                                                    Tanir Fro
+                                                </a>
+                                                <br>
+                                                <span>Formar Manager</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="test-img-txt">
+                                    <div class="test-icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <div class="test-txt">
+                                        <h3>
+                                            Service satisfaction!
+                                        </h3>
+                                        <p>
+                                            5 stars for design quality, but also for prompt new customer service and
+                                            great attention to details work.
+                                        </p>
+                                    </div>
+                                    <div class="test-author">
+                                        <div class="author-img">
+                                            <img src="/assets/img/testi-a3.jpg" alt="">
+                                        </div>
+                                        <div class="author-txt">
+                                            <h4>
+                                                <a href="#">
+                                                    Leofar Lord
+                                                </a>
+                                                <br>
+                                                <span>Formar Manager</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="test-img-txt">
+                                    <div class="test-icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <div class="test-txt">
+                                        <h3>
+                                            Best teaching tips!
+                                        </h3>
+                                        <p>
+                                            5 stars for design quality, but also for prompt new customer service and
+                                            great attention to details work.
+                                        </p>
+                                    </div>
+                                    <div class="test-author">
+                                        <div class="author-img">
+                                            <img src="/assets/img/testi-a4.jpg" alt="">
+                                        </div>
+                                        <div class="author-txt">
+                                            <h4>
+                                                <a href="#">
+                                                    Rohit Grow
+                                                </a>
+                                                <br>
+                                                <span>Formar Manager</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="test-img-txt">
+                                    <div class="test-icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <div class="test-txt">
+                                        <h3>
+                                            Best Support ever!
+                                        </h3>
+                                        <p>
+                                            5 stars for design quality, but also for prompt new customer service and
+                                            great attention to details work.
+                                        </p>
+                                    </div>
+                                    <div class="test-author">
+                                        <div class="author-img">
+                                            <img src="/assets/img/testi-a1.jpg" alt="">
+                                        </div>
+                                        <div class="author-txt">
+                                            <h4>
+                                                <a href="#">
+                                                    Alina Lora
+                                                </a>
+                                                <br>
+                                                <span>Formar Manager</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="test-img-txt">
+                                    <div class="test-icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <div class="test-txt">
+                                        <h3>
+                                            Good cleaning service
+                                        </h3>
+                                        <p>
+                                            5 stars for design quality, but also for prompt new customer service and
+                                            great attention to details work.
+                                        </p>
+                                    </div>
+                                    <div class="test-author">
+                                        <div class="author-img">
+                                            <img src="/assets/img/testi-a2.jpg" alt="">
+                                        </div>
+                                        <div class="author-txt">
+                                            <h4>
+                                                <a href="#">
+                                                    Tanir Fro
+                                                </a>
+                                                <br>
+                                                <span>Formar Manager</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="test-img-txt">
+                                    <div class="test-icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <div class="test-txt">
+                                        <h3>
+                                            Service satisfaction!
+                                        </h3>
+                                        <p>
+                                            5 stars for design quality, but also for prompt new customer service and
+                                            great attention to details work.
+                                        </p>
+                                    </div>
+                                    <div class="test-author">
+                                        <div class="author-img">
+                                            <img src="/assets/img/testi-a3.jpg" alt="">
+                                        </div>
+                                        <div class="author-txt">
+                                            <h4>
+                                                <a href="#">
+                                                    Leofar Lord
+                                                </a>
+                                                <br>
+                                                <span>Formar Manager</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="test-img-txt">
+                                    <div class="test-icon">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                    <div class="test-txt">
+                                        <h3>
+                                            Best teaching tips!
+                                        </h3>
+                                        <p>
+                                            5 stars for design quality, but also for prompt new customer service and
+                                            great attention to details work.
+                                        </p>
+                                    </div>
+                                    <div class="test-author">
+                                        <div class="author-img">
+                                            <img src="/assets/img/testi-a4.jpg" alt="">
+                                        </div>
+                                        <div class="author-txt">
+                                            <h4>
+                                                <a href="#">
+                                                    Rohit Grow
+                                                </a>
+                                                <br>
+                                                <span>Formar Manager</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of testimonial section -->
+    </main>
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-logo-widget">
+                                <div class="footer-logo">
+                                    <a href="#">
+                                        <img src="/assets/img/logo4.png" alt="">
+                                    </a>
+                                </div>
+                                <p>We work with a passion of taking challenges and creating new ones in advertising
+                                    sector.</p>
+                                <div class="yle-btn-wrap text-center">
+                                    <div class="yle-btn">
+                                        <a href="#">
+                                            ABOUT US
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-newsletter">
+                                <h3>Newsletter</h3>
+                                <p>Subscribe our newsletter to get our latest update & news</p>
+                                <form action="#">
+                                    <input type="email" placeholder="Your mail address">
+                                    <button type="submit">
+                                        <i class="far fa-paper-plane"></i>
+                                    </button>
+                                </form>
+                                <div class="footer-social ul-li">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-behance"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-youtube"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-info">
+                                <h3>Official info:</h3>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <a href="#">30 Commercial Road
+                                            Fratton, Australia</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-phone"></i>
+                                        <a href="#">1-888-452-1505</a>
+                                    </li>
+                                </ul>
+                                <div class="open-hours">
+                                    <span>Open Hours:</span>
+                                    <p>Mon - Sat: 8 am - 5 pm, <br>
+                                        Sunday: CLOSED
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-img ul-li">
+                                <h3>Instagram</h3>
+                                <div class="images">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="/assets/img/ins1.jpg" alt="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="/assets/img/ins2.jpg" alt="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="/assets/img/ins3.jpg" alt="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="/assets/img/ins4.jpg" alt="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="/assets/img/ins5.jpg" alt="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="/assets/img/ins6.jpg" alt="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright text-center">
+                <span>© 2021 Yle - Education. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+    <!-- End of footer section -->
+    <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
