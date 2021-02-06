@@ -1,0 +1,85 @@
+.register {
+    padding-top: 60px;
+
+    &::before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        content: "";
+        height: 210px;
+        position: absolute;
+        background-color: #f7f7f7;
+    }
+
+    .container {
+        max-width: 1200px;
+
+        .register-content {
+            z-index: 1;
+            padding: 45px;
+            background-color: #fff;
+            box-shadow: -3.285px 20.741px 51px 0px #00002f0d;
+            position: relative !important;
+
+            &::before {
+                top: 0;
+                left: 0;
+                width: 70%;
+                z-index: -1;
+                content: "";
+                height: 100%;
+                position: absolute;
+                background-repeat: no-repeat;
+                background-image: url(/assets/img/r-bg.png)
+            }
+
+            .register-img {
+                right: 0;
+                bottom: 0;
+                position: absolute;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .register-txt {
+                max-width: 450px;
+
+                h3 {
+                    color: #fff;
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 1.167;
+                    padding-bottom: 20px;
+
+                    span {
+                        color: $secondary-color;
+                    }
+                }
+
+                p {
+                    color: #c6c6c6;
+                    padding-bottom: 25px;
+                    font-size: 16px;
+                }
+                .yle-btn-wrap{
+                    .yle-btn{
+                        a{
+                            height: 45px !important;
+                            width: 140px !important;
+                            font-size: 15px !important;
+                            line-height: 45px !important;
+                            background-color: #00a4ff !important;
+                            margin-top: -30px;
+                            &::after{
+                                background-color: $secondary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
