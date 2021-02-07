@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/560752f518.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Yle - Blog Details 1</title>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <div class="logo">
+                    <img src="/assets/img/logo3.png" alt="">
+                </div>
+
+                <div class="collapse navbar-collapse float-left ul-li" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item has-children">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu clearfix" aria-labelledby="navbarDropdown">
+                                <li><a target="_blank" class="dropdown-item" href="#">Home Page 1</a></li>
+                                <li><a target="_blank" class="dropdown-item" href="#">Home Page 2</a></li>
+                                <li><a target="_blank" class="dropdown-item" href="#">Home Page 3</a></li>
+                                <li><a target="_blank" class="dropdown-item" href="#">Home Page 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Course
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Course</a></li>
+                                <li><a class="dropdown-item" href="#">Course Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Galery</a></li>
+                                <li><a class="dropdown-item" href="#">Contact</a></li>
+                                <li><a class="dropdown-item" href="#">Event</a></li>
+                                <li><a class="dropdown-item" href="#">Event Details</a></li>
+                                <li><a class="dropdown-item" href="#">Faq</a></li>
+                                <li><a class="dropdown-item" href="#">404</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Blog 1</a></li>
+                                <li><a class="dropdown-item" href="#">Blog 2</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Details 1</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Deatils 2</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item has-children">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Instroctur
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Instroctur</a></li>
+                                <li><a class="dropdown-item" href="#">Instroctur Details</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="actions">
+                        <div class="cart">
+                            <button>
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                        <span class="line">|</span>
+                        <div class="user">
+                            <button>
+                                <i class="fas fa-user-alt" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- ****************************************************** -->
+        <section class="yle-modal">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- header  -->
+                        <div class="modal-header position-relative"
+                            style="background-image: url(/assets/img/lg-bg.jpg)">
+                            <div class="modal-txt text-center">
+                                <a href="#">
+                                    <img src="/assets/img/logo4.png" alt="">
+                                </a>
+                                <p>
+                                    Boamco laboris nisi ut aliquip ex ea commodo
+
+                                    conseq nderit in voluptate velit esse
+                                </p>
+                            </div>
+                        </div>
+                        <!-- end of header -->
+                        <!-- body -->
+                        <div class="modal-body">
+                            <!-- sign up & log in -->
+                            <div class="login-signup">
+                                <div class="login-signup-btn ul-li">
+                                    <ul class="nav text-center nav-tabs login-signup-buttons ">
+                                        <li class="nav-item nav-link text-capitalize active show">
+                                            <a href="#">
+                                                Login
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#">
+                                                Sign Up
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Content -->
+                            <div id="tabsContent" class="tab-content">
+                                <div id="login" class="tab-pane fade active show">
+                                    <div class="login-content text-center">
+                                        <form action="#">
+                                            <input type="text" placeholder="Username or email">
+                                            <input type="password" placeholder="Password">
+                                            <div class="login-label">
+                                                <span>
+                                                    <input type="checkbox">
+                                                    Remember me
+                                                </span>
+                                                <a href="#">
+                                                    Forget Password?
+                                                </a>
+                                            </div>
+                                            <button type="submit">
+                                                Submit
+                                            </button>
+
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ****************************************************** -->
+        <!-- Breadcrumb section -->
+        <section class="breadcrumb position-relative">
+            <span class="overlay position-absolute"></span>
+            <div class="container">
+                <div class="breadcrumb-content text-center">
+                    <h2>Javascript - From Beginner to Pro-Build real world JS apps</h2>
+                    <div class="item ul-li">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="active">
+                                Blog
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of breadcrumb section -->
+
+        <!-- Blog Details -->
+        <section class="blog-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="blog-details-content">
+                            <div class="blog-dt1">
+                                <div class="cover">
+                                    <img src="/assets/img/blg-th1.jpg" alt="">
+                                </div>
+                                <div class="blog-txt">
+                                    <div class="meta">
+                                        <a class="line" href="#">
+                                            BY ADMIN
+                                        </a>
+                                        <a class="line" href="#">
+                                            DECEMBER 13, 2020
+                                        </a>
+                                        <a href="#">
+                                            0 COMMENTS
+                                        </a>
+                                    </div>
+                                    <article>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                        deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+                                        error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                        ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                                        sunt explicabo...</article>
+                                    <article>
+                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                                        quia consequuntur magni do lores eos qui ratione voluptatem sequi nesciunt.
+                                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                                        adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                                        dolore magnam aliquam quaerat voluptatem.
+                                    </article>
+                                    <blockquote>
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ali
+                                        quip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vo
+                                        luptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        <div class="author">
+                                            <strong>Tom Anderson,</strong>
+                                            <span>NewYork Times</span>
+                                        </div>
+                                    </blockquote>
+                                    <article>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                        deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+                                        error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                        ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                                        sunt explicabo.</article>
+                                    <article>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                                        sed quia consequuntur magni do lores eos qui ratione voluptatem sequi nesciunt.
+                                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                                        adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                                        dolore magnam aliquam quaerat voluptatem.</article>
+                                    <div class="share">
+                                        <div class="share1 float-start">
+                                            <a href="#">
+                                                Design
+                                            </a>
+                                            <a href="#">
+                                                Development
+                                            </a>
+                                        </div>
+                                        <div class="share2 float-end">
+                                            <span>SHARE</span>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-behance"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="blog-dt2">
+                                <div class="prev-post">
+                                    <div class="prev">
+                                        <a href="#">
+                                            <i class="fas fa-chevron-left"></i>
+                                            Prev Post
+                                        </a>
+                                    </div>
+                                    <h3>
+                                        <a href="#">Learn your desired skill any time from any where</a>
+                                    </h3>
+                                </div>
+                                <div class="next-post text-right">
+                                    <div class="next">
+                                        <a href="#">
+                                            Next Post
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                    <h3>
+                                        <a href="#">
+                                            Your skill is your best friend to make a better career
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="comments">
+                                <h3>17 Comments</h3>
+                                <div class="discuss">
+                                    <div class="comment">
+                                        <div class="image float-start">
+                                            <img src="/assets/img/blg-co1.jpg" alt="">
+                                        </div>
+                                        <div class="txt position-relative">
+                                            <h4>
+                                                <a href="#">
+                                                    Sarah Jennifer
+                                                </a>
+                                            </h4>
+                                            <span>December 08, 2020 04.52 pm</span>
+                                            <p>Fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut
+                                                perspiciatis unde omnis iste natus error sit volup maccus antium dolore
+                                                eimque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                                            <a class="comment-btn" href="#">Reply</a>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="image float-start">
+                                            <img src="/assets/img/blg-co2.jpg" alt="">
+                                        </div>
+                                        <div class="txt position-relative">
+                                            <h4>
+                                                <a href="#">
+                                                    Paul Anderson
+                                                </a>
+                                            </h4>
+                                            <span>December 08, 2020 04.52 pm</span>
+                                            <p>Fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut
+                                                perspiciatis unde omnis iste natus error sit volup maccus antium dolore
+                                                eimque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                                            <a class="comment-btn" href="#">Reply</a>
+                                        </div>
+                                    </div>
+                                    <div class="comment reply">
+                                        <div class="image float-start">
+                                            <img src="/assets/img/blg-co3.jpg" alt="">
+                                        </div>
+                                        <div class="txt position-relative">
+                                            <h4>
+                                                <a href="#">
+                                                    Victoria Loren
+                                                </a>
+                                            </h4>
+                                            <span>December 08, 2020 04.52 pm</span>
+                                            <p>Fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut
+                                                perspiciatis unde omnis iste natus error sit volup maccus antium dolore
+                                                eimque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                                            <a class="comment-btn" href="#">Reply</a>
+                                        </div>
+                                    </div>
+                                    <div class="comment reply">
+                                        <div class="image float-start">
+                                            <img src="/assets/img/blg-co4.jpg" alt="">
+                                        </div>
+                                        <div class="txt position-relative">
+                                            <h4>
+                                                <a href="#">
+                                                    Robert Harrison
+                                                </a>
+                                            </h4>
+                                            <span>December 08, 2020 04.52 pm</span>
+                                            <p>Fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut
+                                                perspiciatis unde omnis iste natus error sit volup maccus antium dolore
+                                                eimque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                                            <a class="comment-btn" href="#">Reply</a>
+                                        </div>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="image float-start">
+                                            <img src="/assets/img/blg-co5.jpg" alt="">
+                                        </div>
+                                        <div class="txt position-relative">
+                                            <h4>
+                                                <a href="#">
+                                                    Mike Arther
+                                                </a>
+                                            </h4>
+                                            <span>December 08, 2020 04.52 pm</span>
+                                            <p>Fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                                sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut
+                                                perspiciatis unde omnis iste natus error sit volup maccus antium dolore
+                                                eimque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                                            <a class="comment-btn" href="#">Reply</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add-comment">
+                                    <h3>
+                                        Add a Comment
+                                    </h3>
+                                    <form action="#">
+                                        <div class="comment-input d-flex">
+                                            <div class="input">
+                                                <input type="text" name="name" placeholder="Your name *">
+                                            </div>
+                                            <div class="input">
+                                                <input type="text" name="name" placeholder="Your Email *">
+                                            </div>
+                                            <div class="input">
+                                                <input type="text" name="name" placeholder="Your Phone *">
+                                            </div>
+                                        </div>
+                                        <textarea name="text" placeholder="YourReview"></textarea>
+                                        <button type="submit">
+                                            Submit
+                                            <i class="fas fa-arrow-right"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="sidebar">
+                            <div class="widget">
+                                <div class="search position-relative">
+                                    <form action="#">
+                                        <input type="text" placeholder="Search">
+                                        <button type="submit">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="widget">
+                                <div class="category">
+                                    <h3>Category</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                Web Design
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Creative Design
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Development
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Sports
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Musics
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Creative Skills
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Sales & Marketing
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="widget">
+                                <div class="recent-post">
+                                    <h3>
+                                        Recent Posts
+                                    </h3>
+                                    <div class="post">
+                                        <div class="image float-start">
+                                            <img src="/assets/img/blg-rc1.jpg" alt="">
+                                        </div>
+                                        <div class="txt">
+                                            <span>Dec 12, 2020</span>
+                                            <h3>
+                                                <a href="#">
+                                                    Python Bootcamp <br> Zero to Hero
+                                                </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="post">
+                                        <div class="image float-start">
+                                            <img src="/assets/img/blg-rc2.jpg" alt="">
+                                        </div>
+                                        <div class="txt">
+                                            <span>Dec 12, 2020</span>
+                                            <h3>
+                                                <a href="#">
+                                                    Python Bootcamp Zero to Hero
+                                                </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="post">
+                                        <div class="image float-start">
+                                            <img src="/assets/img/blg-rc3.jpg" alt="">
+                                        </div>
+                                        <div class="txt">
+                                            <span>Dec 12, 2020</span>
+                                            <h3>
+                                                <a href="#">
+                                                    Python Bootcamp Zero to Hero
+                                                </a>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget">
+                                <div class="tags ul-li">
+                                    <h3>Popular Tags</h3>
+                                    <div class="blog-tag ul-li">
+                                        <a href="#">Design</a>
+                                        <a href="#">Development</a>
+                                        <a href="#">Photoshop</a>
+                                        <a href="#">Graphics</a>
+                                        <a href="#">Management</a>
+                                        <a href="#">Web</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Of Blog details -->
+    </main>
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-logo-widget">
+                                <div class="footer-logo">
+                                    <a href="#">
+                                        <img src="/assets/img/logo4.png" alt="">
+                                    </a>
+                                </div>
+                                <p>We work with a passion of taking challenges and creating new ones in advertising
+                                    sector.</p>
+                                <div class="yle-btn-wrap text-center">
+                                    <div class="yle-btn">
+                                        <a href="#">
+                                            ABOUT US
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-newsletter">
+                                <h3>Newsletter</h3>
+                                <p>Subscribe our newsletter to get our latest update & news</p>
+                                <form action="#">
+                                    <input type="email" placeholder="Your mail address">
+                                    <button type="submit">
+                                        <i class="far fa-paper-plane"></i>
+                                    </button>
+                                </form>
+                                <div class="footer-social ul-li">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-behance"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-youtube"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-info">
+                                <h3>Official info:</h3>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <a href="#">30 Commercial Road
+                                            Fratton, Australia</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-phone"></i>
+                                        <a href="#">1-888-452-1505</a>
+                                    </li>
+                                </ul>
+                                <div class="open-hours">
+                                    <span>Open Hours:</span>
+                                    <p>Mon - Sat: 8 am - 5 pm, <br>
+                                        Sunday: CLOSED
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-img ul-li">
+                                <h3>Instagram</h3>
+                                <div class="images">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="/assets/img/ins1.jpg" alt="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="/assets/img/ins2.jpg" alt="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="/assets/img/ins3.jpg" alt="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="/assets/img/ins4.jpg" alt="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="/assets/img/ins5.jpg" alt="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="/assets/img/ins6.jpg" alt="">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright text-center">
+                <span>© 2021 Yle - Education. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+    <!-- End of footer section -->
+    <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
