@@ -1,0 +1,125 @@
+.inst-details {
+    padding: 100px 0px;
+    background-color: #f2f2f4;
+
+    .inst-content {
+        padding: 35px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0px 6px 38px 0px #0000000a;
+
+        .inst-img {
+            width: 370px;
+            height: 370px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 100%;
+            box-shadow: 0px 6px 42px 0px #0404611f;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .inst-txt {
+            padding-top: 10px;
+
+            h3 {
+                color: #000000;
+                font-size: 30px;
+                font-weight: 700;
+                padding-bottom: 0px;
+            }
+
+            span {
+                font-size: 18px;
+                font-weight: 700;
+                font-family: $secondary-font;
+                color: #555555;
+            }
+
+            .social {
+                margin-top: 10px !important;
+
+                a {
+                    font-size: 18px;
+                    margin-right: 15px;
+
+                    &:nth-child(1) {
+                        color: #3b5998;
+                    }
+
+                    &:nth-child(2) {
+                        color: #1da1f2;
+                    }
+
+                    &:nth-child(3) {
+                        color: #0077b5;
+                    }
+
+                    &:nth-child(4) {
+                        color: #5973e9;
+                    }
+                }
+            }
+
+            .profile {
+                width: 270px;
+                padding: 18px;
+                border-radius: 3px;
+                border: 2px solid #d1d1d3;
+                float: right;
+                
+
+                span {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: 400;
+                    font-size: 16px !important;
+                    font-family: $primary-font;
+
+                    i {
+                        margin-right: 10px;
+                        color: #0000fe;
+                    }
+                    b{
+                        color: black;
+                    }
+                }
+            }
+            .inst-details-content{
+                margin-top: 150px;
+                p{
+                    margin-bottom: 30px;
+                    font-size: 16px;
+                    padding-bottom: 0;
+                }
+                .inst-btn{
+                    color: #000 !important;
+                    height: 45px;
+                    width: 150px;
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    border-radius: 30px;
+                    border: 2px solid #ff5520;
+                    transition: 0.3s all ease-in-out;
+                    a{
+                        color: black;
+                    }
+                    &:hover{
+                        background-color: $secondary-color;
+                        a{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.course-section2 {
+    background-color: #f2f2f4;
+}
