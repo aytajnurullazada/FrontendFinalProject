@@ -94,32 +94,31 @@
             }
         }
     }
+}
+.pages {
+    margin-top: 15px;
 
-    .pages {
-        margin-top: 15px;
+    ul li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
 
-        ul li {
-            margin: 0;
-            padding: 0;
-            list-style: none;
+        a {
+            color: #000;
+            width: 45px;
+            height: 45px;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0px 5px;
+            line-height: 45px;
             display: inline-block;
-
-            a {
-                color: #000;
-                width: 45px;
-                height: 45px;
-                font-size: 18px;
-                font-weight: 700;
-                margin: 0px 5px;
-                line-height: 45px;
-                display: inline-block;
-                font-family: "Fira Sans";
-                background-color: #ffffff;
-                transition: 0.4s all ease-in-out;
-                &:hover{
-                    background-color: $primary-color;
-                    color: white;
-                }
+            font-family: "Fira Sans";
+            background-color: #ffffff;
+            transition: 0.4s all ease-in-out;
+            &:hover{
+                background-color: $primary-color;
+                color: white;
             }
         }
     }
