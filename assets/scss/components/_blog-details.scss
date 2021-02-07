@@ -254,67 +254,7 @@
             }
         }
 
-        .add-comment {
-            padding-top: 100px;
-            position: relative;
-
-            &::before {
-                top: 0;
-                left: -45px;
-                height: 40px;
-                width: 111%;
-                content: "";
-                position: absolute;
-                background-color: #f2f2f4;
-            }
-
-            h3 {
-                color: #000;
-                font-size: 24px;
-                font-weight: 700;
-            }
-
-            .comment-input {
-                margin: 0px -7px;
-
-                .input {
-                    padding: 0px 7px;
-
-                    input {
-                        width: 254px;
-                        height: 45px;
-                        border: none;
-                        padding-left: 15px;
-                        border-radius: 4px;
-                        margin-bottom: 20px;
-                        background-color: #efeff0;
-                    }
-
-                }
-
-
-            }
-
-            textarea {
-                width: 100%;
-                border: none;
-                height: 165px;
-                padding: 15px;
-                border-radius: 4px;
-                margin-bottom: 20px;
-                background-color: #efeff0;
-            }
-
-            button {
-                color: #fff;
-                width: 170px;
-                height: 50px;
-                border: none;
-                font-weight: 700;
-                border-radius: 40px;
-                background-color: #0000fe;
-            }
-        }
+        
     }
 
     .widget {
@@ -471,5 +411,66 @@
             }
             
         }
+    }
+}
+.add-comment {
+    padding-top: 100px;
+    position: relative;
+
+    &::before {
+        top: 0;
+        left: -45px;
+        height: 40px;
+        width: 111%;
+        content: "";
+        position: absolute;
+        background-color: #f2f2f4;
+    }
+
+    h3 {
+        color: #000;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .comment-input {
+        margin: 0px -7px;
+
+        .input {
+            padding: 0px 7px;
+
+            input {
+                width: 254px;
+                height: 45px;
+                border: none;
+                padding-left: 15px;
+                border-radius: 4px;
+                margin-bottom: 20px;
+                background-color: #efeff0;
+            }
+
+        }
+
+
+    }
+
+    textarea {
+        width: 100%;
+        border: none;
+        height: 165px;
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        background-color: #efeff0;
+    }
+
+    button {
+        color: #fff;
+        width: 170px;
+        height: 50px;
+        border: none;
+        font-weight: 700;
+        border-radius: 40px;
+        background-color: #0000fe;
     }
 }

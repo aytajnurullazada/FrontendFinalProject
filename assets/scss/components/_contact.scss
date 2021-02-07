@@ -1,0 +1,68 @@
+body {
+    background-color: #f2f2f4;
+}
+
+.googlemap {
+
+    padding: 100px 0px 0px !important;
+}
+
+.categorie {
+    padding: 100px 0px;
+
+    .cat-content {
+        margin-top: 40px;
+    }
+
+    .contact {
+        padding: 50px;
+        border-radius: 10px;
+        background-color: #fff;
+        align-items: center;
+
+        .icon {
+            margin-bottom: 28px;
+        }
+
+        h3 {
+            color: #000;
+            font-size: 20px;
+            font-weight: 700;
+            padding-bottom: 10px;
+        }
+
+        span {
+            //display: block;
+            font-size: 18px;
+        }
+    }
+}
+
+.add-comment {
+    h3 {
+        color: #000;
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        padding-bottom: 35px;
+    }
+
+    form {
+        padding: 40px;
+        background-color: #fff;
+
+        input {
+            height: 50px;
+            width: 340px !important;
+            border: none;
+            margin-right:  15px;
+            padding-left: 20px;
+            border-radius: 8px;
+            background-color: #efeff0;
+        }
+        button{
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+}
