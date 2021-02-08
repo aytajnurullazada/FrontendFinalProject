@@ -71,3 +71,13 @@
 
     
 }
+
+$breakpoint-tablet: 954px;
+@media (max-width: $breakpoint-tablet) {
+  .about-txt{
+      margin-top: 50px;
+      .title-watermark{
+          font-size: 10px;
+      }
+  }
+}

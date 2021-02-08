@@ -1,0 +1,347 @@
+.course-details {
+    padding: 100px 0px;
+    background-color: #f2f2f4;
+
+    .container {
+        width: 1200px;
+    }
+
+    .cdt-content {
+        background-color: #fff;
+
+        .image {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .txt-area {
+            padding: 40px 40px;
+            background-color: white !important;
+
+            .navtabs {
+                background-color: #f2f2f4;
+
+                .nav-link {
+                    padding: 22px 38px;
+                    font-weight: 700 !important;
+                    font-size: 18px;
+                    color: black !important;
+                    border-radius: 0 !important;
+                    border: none;
+                }
+
+                .nav-link.active {
+                    background-color: #ff5520;
+                    color: white !important;
+                }
+            }
+
+
+
+            .courses-details {
+
+                .course-details-overview {
+                    .txt1 {
+                        h3 {
+                            color: #000;
+                            font-size: 24px;
+                            font-weight: 700;
+                            font-family: $secondary-font;
+                        }
+
+                        p {
+                            margin-bottom: 0;
+                            color: #555 !important;
+                            opacity: 1 !important;
+                            font-size: 16px !important;
+                            font-family: $primary-font;
+                        }
+                    }
+
+                    .txt2 {
+                        h3 {
+                            color: #000;
+                            font-size: 24px !important;
+                            font-weight: 700 !important;
+                            padding-bottom: 10px;
+                        }
+
+                        .overview-list {
+                            margin-top: 15px;
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            .overview-part {
+                                width: 50%;
+                                float: left;
+                                margin-bottom: 50px;
+
+                                .icon-title {
+                                    margin-bottom: -10px;
+
+                                    img {
+                                        margin-right: 10px;
+                                        max-width: 100%;
+                                        height: auto;
+                                    }
+
+                                    h3 {
+                                        color: #000000 !important;
+                                        font-size: 20px !important;
+                                        font-family: $secondary-font;
+                                        display: inline-block;
+
+                                        a {
+                                            color: black;
+                                            font-weight: 500 !important;
+                                        }
+                                    }
+                                }
+
+                                .txt {
+                                    p {
+                                        font-size: 15px;
+                                        line-height: 1.6;
+                                        max-width: 330px;
+                                        color: #555555 !important;
+                                        opacity: 1 !important;
+                                        margin: 0;
+                                        padding: 0;
+
+                                    }
+
+                                    a {
+                                        text-decoration: underline !important;
+                                        color: black;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .course-curriculm {
+                .header {
+                    margin-bottom: 20px;
+
+                    h3 {
+                        color: #000;
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin-top: 30px;
+                        line-height: 1.2;
+                        vertical-align: middle;
+
+                    }
+
+                    .time {
+                        margin-top: -40px;
+
+                        span {
+                            font-weight: 500 !important;
+                            margin-left: 30px !important;
+                            color: #555555
+                        }
+                    }
+
+                }
+
+                .accordion {
+                    .accordion-item {
+                        margin-bottom: 10px;
+
+                        button {
+                            width: 100%;
+                            border: none;
+                            position: relative;
+                            padding: 20px 20px 20px 50px;
+                            background-color: #f2f2f4;
+                            border-radius: 0;
+                            box-shadow: none;
+
+                            h3 {
+                                color: #000;
+                                float: left;
+                                font-size: 20px;
+                                font-weight: 700 !important;
+                            }
+
+                            span {
+                                font-weight: 500;
+                                margin-left: 30px;
+                                font: 16px $primary-font;
+                                color: black !important;
+                            }
+
+                            .accordion-button.collapsed {
+                                content: "+";
+                                font-size: 40px;
+                                background-image: none;
+                                float: left;
+                            }
+
+                            &::after {
+                                content: "-";
+                            }
+
+                        }
+                    }
+
+                    .accordion-body {
+                        padding: 20px 30px;
+                        border: 1px solid #f2f2f4;
+
+                        ul {
+                            margin: 0;
+                            padding: 0;
+
+                            li {
+                                width: 100%;
+                                border-bottom: 1px solid #dadada;
+                                margin-bottom: 15px;
+                                padding-bottom: 15px;
+                                list-style: none;
+
+                                i {
+                                    font-size: 13px;
+                                    margin-right: 10px;
+                                    color: #555555;
+                                }
+
+                                span {
+                                    float: right;
+                                    color: #555555 !important;
+                                }
+
+                                .first {
+                                    color: #ff5520 !important;
+                                    margin-right: 10px;
+                                }
+
+                                &:last-child {
+                                    border: none;
+                                    padding-bottom: 0;
+                                    margin-bottom: 0;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .course-instructors {
+                h3 {
+                    color: #000;
+                    font-size: 24px !important;
+                    font-weight: 700;
+                    padding-bottom: 10px;
+                    font-family: $secondary-font;
+                    margin-top: 20px;
+                }
+
+                .ins-btn {
+                    height: 48px;
+                    width: 150px;
+                    line-height: 44px;
+                    border-radius: 30px;
+                    border: 2px solid #0000fe;
+                    text-align: center;
+
+                    a {
+                        color: black !important;
+                        font-weight: 700;
+                    }
+                }
+
+                .ins-img {
+                    margin-top: 20px;
+
+                    img {
+                        margin-right: 25px;
+                    }
+
+                    .txt {
+                        padding-top: 5px;
+                        margin-bottom: 15px;
+
+                        h3 {
+                            color: #000;
+                            font-weight: 600;
+                            font-size: 20px !important;
+                            padding-bottom: 10px;
+                        }
+
+                        .rate {
+                            margin-bottom: 10px;
+                            
+
+                            ul {
+                                margin-right: 10px;
+                                display: inline;
+                                padding: 0;
+
+                                li {
+                                    color: #ebc90a;
+                                    list-style: none;
+                                    display: inline-block;
+                                }
+
+                                .unchecked {
+                                    color: #d3d3d3 !important;
+                                }
+                            }
+
+                            .first {
+                                color: #000;
+                                font-weight: 500;
+                                margin-right: 10px;
+
+                            }
+                            .seecond{
+                                color: #555555;
+                                font-size: 14px !important;
+                            }
+                        }
+                        .student{
+                            span{
+                                margin-right: 10px;
+                            }
+                            i{
+                                color: #e3002a !important;
+                                margin-right: 6px !important;
+                            }
+                        }
+                    }
+                }
+                .ins-details{
+                    p{
+                        font-size: 16px !important;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.no-transition {
+    -webkit-transition: height 0;
+    -moz-transition: height 0;
+    -ms-transition: height 0;
+    -o-transition: height 0;
+    transition: height 0;
+}
+.crev{
+    width: 500px;
+    height: 350px;
+    background-color: pink;
+}

@@ -9,9 +9,6 @@ body {
     background-color: #fff;
 }
 
-.container {
-    width: 1200px !important;
-}
 
 h1,
 h2,
@@ -124,14 +121,17 @@ p {
 
 
 }
-
-
-// Carousel style
-.owl-nav {
-    display: none;
+section {
+    overflow: hidden;
 }
 
+// Carousel style
+
+
 .owl-item {
+    .item{
+        padding-top: 60px;
+    }
     margin-bottom: 50px !important;
 }
 

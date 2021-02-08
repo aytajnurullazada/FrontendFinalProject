@@ -5,15 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/560752f518.js" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-    crossorigin="anonymous" />
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="assets/css/style.min.css">
   <title>Yle - Education 1</title>
 </head>
@@ -113,90 +110,14 @@
       </div>
     </nav>
   </header>
-  <!-- ****************************************************** -->
-  <section class="yle-modal">
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <!-- header  -->
-          <div class="modal-header position-relative" style="background-image: url(/assets/img/lg-bg.jpg)">
-            <div class="modal-txt text-center">
-              <a href="#">
-                <img src="/assets/img/logo4.png" alt="">
-              </a>
-              <p>
-                Boamco laboris nisi ut aliquip ex ea commodo
-
-                conseq nderit in voluptate velit esse
-              </p>
-            </div>
-          </div>
-          <!-- end of header -->
-          <!-- body -->
-          <div class="modal-body">
-            <!-- sign up & log in -->
-            <div class="login-signup">
-              <div class="login-signup-btn ul-li">
-                <ul class="nav text-center nav-tabs login-signup-buttons ">
-                  <li class="nav-item nav-link text-capitalize active show">
-                    <a href="#">
-                      Login
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#">
-                      Sign Up
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- Content -->
-            <div id="tabsContent" class="tab-content">
-              <div id="login" class="tab-pane fade active show">
-                <div class="login-content text-center">
-                  <form action="#">
-                    <input type="text" placeholder="Username or email">
-                    <input type="password" placeholder="Password">
-                    <div class="login-label">
-                      <span>
-                        <input type="checkbox">
-                        Remember me
-                      </span>
-                      <a href="#">
-                        Forget Password?
-                      </a>
-                    </div>
-                    <button type="submit">
-                      Submit
-                    </button>
-
-                  </form>
-                </div>
-              </div>
-
-            </div>
-
-
-          </div>
-          <div class="modal-footer">
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- ****************************************************** -->
-
   <!-- Main Section -->
   <main>
     <!-- Banner section -->
     <section id="banner" class="banner-section">
-      <span class="dot position-absolute dot1"></span>
-      <span class="dot position-absolute dot2"></span>
-      <span class="dot position-absolute dot3"></span>
-      <span class="dot position-absolute dot4"></span>
+      <span class="square square-1"></span>
+      <span class="square square-2"></span>
+      <span class="square square-3"></span>
+      <span class="square square-4"></span>
       <div class="banner-content position-relative">
         <div class="image-banner">
           <img src="/assets/img/banner.png" alt="">
@@ -225,7 +146,7 @@
                   </a>
                 </div>
                 <div class="play-btn text-center position-relative">
-                  <a class="video-box" href="https://www.youtube.com/watch?v=gUYjYEGbxEY">
+                  <a data-fancybox="video" class="video-box" href="https://www.youtube.com/watch?v=gUYjYEGbxEY">
                     <i class="fas fa-play"></i>
                     <span class="btn-border border1"></span>
                     <span class="btn-border border2"></span>
@@ -260,12 +181,12 @@
           </h2>
         </div>
         <div class="category-slide">
-          <div class="owl-carousel owl-theme">
+          <div class="owl-carousel category-carousel owl-theme">
             <div class="item">
               <div class="category-img-txt">
                 <div class="category-icon-txt">
                   <div class="category-icon">
-                    <i class="fas fa-atom"></i> 
+                    <i class="fas fa-atom"></i>
                   </div>
                   <div class="category-txt">
                     <h3>
@@ -280,7 +201,7 @@
                   <img src="/assets/img/ct1.jpg" alt="">
                 </div>
                 <div class="category-hover-icon text-center">
-                  <a href="#"> 
+                  <a href="#">
                     <i class="fas fa-plus"></i>
                   </a>
                 </div>
@@ -290,7 +211,7 @@
               <div class="category-img-txt">
                 <div class="category-icon-txt">
                   <div class="category-icon">
-                    <i class="fas fa-pencil-ruler"></i>
+                    <i class="flaticon-atom"></i>
                   </div>
                   <div class="category-txt">
                     <h3>
@@ -305,7 +226,7 @@
                   <img src="/assets/img/ct2.jpg" alt="">
                 </div>
                 <div class="category-hover-icon text-center">
-                  <a href="#"> 
+                  <a href="#">
                     <i class="fas fa-plus"></i>
                   </a>
                 </div>
@@ -330,7 +251,7 @@
                   <img src="/assets/img/ct3.jpg" alt="">
                 </div>
                 <div class="category-hover-icon text-center">
-                  <a href="#"> 
+                  <a href="#">
                     <i class="fas fa-plus"></i>
                   </a>
                 </div>
@@ -355,7 +276,7 @@
                   <img src="/assets/img/ct1.jpg" alt="">
                 </div>
                 <div class="category-hover-icon text-center">
-                  <a href="#"> 
+                  <a href="#">
                     <i class="fas fa-plus"></i>
                   </a>
                 </div>
@@ -380,7 +301,7 @@
                   <img src="/assets/img/ct2.jpg" alt="">
                 </div>
                 <div class="category-hover-icon text-center">
-                  <a href="#"> 
+                  <a href="#">
                     <i class="fas fa-plus"></i>
                   </a>
                 </div>
@@ -405,13 +326,13 @@
                   <img src="/assets/img/ct3.jpg" alt="">
                 </div>
                 <div class="category-hover-icon text-center">
-                  <a href="#"> 
+                  <a href="#">
                     <i class="fas fa-plus"></i>
                   </a>
                 </div>
               </div>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </section>
@@ -433,7 +354,7 @@
         </div>
         <div class="course-content">
           <div class="row">
-            <div class="col-lg-3 col-md-6 course-card">
+            <div class="col-lg-3 col-md-6 course-card  wow animate__animated animate__fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
               <div class="course-img-txt">
                 <div class="course-img text-center">
                   <img src="/assets/img/pc1.jpg" alt="">
@@ -493,7 +414,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 course-card">
+            <div class="col-lg-3 col-md-6 course-card  wow animate__animated animate__fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
               <div class="course-img-txt">
                 <div class="course-img text-center">
                   <img src="/assets/img/pc2.jpg" alt="">
@@ -553,7 +474,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 course-card">
+            <div class="col-lg-3 col-md-6 course-card  wow animate__animated animate__fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
               <div class="course-img-txt">
                 <div class="course-img text-center">
                   <img src="/assets/img/pc3.jpg" alt="">
@@ -613,7 +534,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 course-card">
+            <div class="col-lg-3 col-md-6 course-card  wow animate__animated animate__fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
               <div class="course-img-txt">
                 <div class="course-img text-center">
                   <img src="/assets/img/pc4.jpg" alt="">
@@ -673,7 +594,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 course-card">
+            <div class="col-lg-3 col-md-6 course-card  wow animate__animated animate__fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
               <div class="course-img-txt">
                 <div class="course-img text-center">
                   <img src="/assets/img/pc5.jpg" alt="">
@@ -733,7 +654,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 course-card">
+            <div class="col-lg-3 col-md-6 course-card  wow animate__animated animate__fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
               <div class="course-img-txt">
                 <div class="course-img text-center">
                   <img src="/assets/img/pc6.jpg" alt="">
@@ -793,7 +714,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 course-card">
+            <div class="col-lg-3 col-md-6 course-card  wow animate__animated animate__fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
               <div class="course-img-txt">
                 <div class="course-img text-center">
                   <img src="/assets/img/pc7.jpg" alt="">
@@ -853,7 +774,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 course-card">
+            <div class="col-lg-3 col-md-6 course-card  wow animate__animated animate__fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
               <div class="course-img-txt">
                 <div class="course-img text-center">
                   <img src="/assets/img/pc8.jpg" alt="">
@@ -932,7 +853,7 @@
     <section class="register position-relative">
       <div class="container">
         <div class="register-content position-relative">
-          <span class="register-img position-absolute">
+          <span class="register-img position-absolute  wow animate__animated animate__fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
             <img src="/assets/img/rm1.png" alt="">
           </span>
           <div class="register-txt">
@@ -946,7 +867,7 @@
                   Register now
                 </a>
               </div>
-  
+
             </div>
           </div>
         </div>
@@ -970,7 +891,7 @@
         </div>
         <div class="test-content">
           <div class="test-slide">
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel testimonial-carousel owl-theme">
               <div class="item">
                 <div class="test-img-txt">
                   <div class="test-icon">
@@ -981,7 +902,8 @@
                       Best Support ever!
                     </h3>
                     <p>
-                      5 stars for design quality, but also for prompt new customer service and great attention to details work.
+                      5 stars for design quality, but also for prompt new customer service and great attention to
+                      details work.
                     </p>
                   </div>
                   <div class="test-author">
@@ -998,7 +920,7 @@
                       </h4>
                     </div>
                   </div>
-                 
+
                 </div>
               </div>
               <div class="item">
@@ -1011,7 +933,8 @@
                       Good cleaning service
                     </h3>
                     <p>
-                      5 stars for design quality, but also for prompt new customer service and great attention to details work.
+                      5 stars for design quality, but also for prompt new customer service and great attention to
+                      details work.
                     </p>
                   </div>
                   <div class="test-author">
@@ -1028,7 +951,7 @@
                       </h4>
                     </div>
                   </div>
-                 
+
                 </div>
               </div>
               <div class="item">
@@ -1041,7 +964,8 @@
                       Service satisfaction!
                     </h3>
                     <p>
-                      5 stars for design quality, but also for prompt new customer service and great attention to details work.
+                      5 stars for design quality, but also for prompt new customer service and great attention to
+                      details work.
                     </p>
                   </div>
                   <div class="test-author">
@@ -1058,7 +982,7 @@
                       </h4>
                     </div>
                   </div>
-                 
+
                 </div>
               </div>
               <div class="item">
@@ -1071,7 +995,8 @@
                       Best teaching tips!
                     </h3>
                     <p>
-                      5 stars for design quality, but also for prompt new customer service and great attention to details work.
+                      5 stars for design quality, but also for prompt new customer service and great attention to
+                      details work.
                     </p>
                   </div>
                   <div class="test-author">
@@ -1088,7 +1013,7 @@
                       </h4>
                     </div>
                   </div>
-                 
+
                 </div>
               </div>
               <div class="item">
@@ -1101,7 +1026,8 @@
                       Best Support ever!
                     </h3>
                     <p>
-                      5 stars for design quality, but also for prompt new customer service and great attention to details work.
+                      5 stars for design quality, but also for prompt new customer service and great attention to
+                      details work.
                     </p>
                   </div>
                   <div class="test-author">
@@ -1118,7 +1044,7 @@
                       </h4>
                     </div>
                   </div>
-                 
+
                 </div>
               </div>
               <div class="item">
@@ -1131,7 +1057,8 @@
                       Good cleaning service
                     </h3>
                     <p>
-                      5 stars for design quality, but also for prompt new customer service and great attention to details work.
+                      5 stars for design quality, but also for prompt new customer service and great attention to
+                      details work.
                     </p>
                   </div>
                   <div class="test-author">
@@ -1148,7 +1075,7 @@
                       </h4>
                     </div>
                   </div>
-                 
+
                 </div>
               </div>
               <div class="item">
@@ -1161,7 +1088,8 @@
                       Service satisfaction!
                     </h3>
                     <p>
-                      5 stars for design quality, but also for prompt new customer service and great attention to details work.
+                      5 stars for design quality, but also for prompt new customer service and great attention to
+                      details work.
                     </p>
                   </div>
                   <div class="test-author">
@@ -1178,7 +1106,7 @@
                       </h4>
                     </div>
                   </div>
-                 
+
                 </div>
               </div>
               <div class="item">
@@ -1191,7 +1119,8 @@
                       Best teaching tips!
                     </h3>
                     <p>
-                      5 stars for design quality, but also for prompt new customer service and great attention to details work.
+                      5 stars for design quality, but also for prompt new customer service and great attention to
+                      details work.
                     </p>
                   </div>
                   <div class="test-author">
@@ -1208,10 +1137,10 @@
                       </h4>
                     </div>
                   </div>
-                 
+
                 </div>
               </div>
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1234,7 +1163,7 @@
         </div>
         <div class="blog-content">
           <div class="blog-slide">
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel blog-carousel owl-theme">
               <div class="item">
                 <div class="blog-img-txt">
                   <div class="blog-img position-relative">
@@ -1260,11 +1189,11 @@
                     <div class="blog-title">
                       <h3>We would love to share a <br>
                         similar experience</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                          adipiscing elit, sed do...</p>
-                          <a class="read-more text-uppercase" href="#">
-                            Read More <span>+</span>
-                          </a>
+                      <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do...</p>
+                      <a class="read-more text-uppercase" href="#">
+                        Read More <span>+</span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1294,11 +1223,11 @@
                     <div class="blog-title">
                       <h3>New study reveals flaws in
                         UK Coronavirus testing...</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                          adipiscing elit, sed do...</p>
-                          <a class="read-more text-uppercase" href="#">
-                            Read More <span>+</span>
-                          </a>
+                      <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do...</p>
+                      <a class="read-more text-uppercase" href="#">
+                        Read More <span>+</span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1327,11 +1256,11 @@
                     </div>
                     <div class="blog-title">
                       <h3>Engineers ready to supply local business...</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                          adipiscing elit, sed do...</p>
-                          <a class="read-more text-uppercase" href="#">
-                            Read More <span>+</span>
-                          </a>
+                      <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do...</p>
+                      <a class="read-more text-uppercase" href="#">
+                        Read More <span>+</span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1361,11 +1290,11 @@
                     <div class="blog-title">
                       <h3>We would love to share a <br>
                         similar experience</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                          adipiscing elit, sed do...</p>
-                          <a class="read-more text-uppercase" href="#">
-                            Read More <span>+</span>
-                          </a>
+                      <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do...</p>
+                      <a class="read-more text-uppercase" href="#">
+                        Read More <span>+</span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1395,11 +1324,11 @@
                     <div class="blog-title">
                       <h3>New study reveals flaws in
                         UK Coronavirus testing...</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                          adipiscing elit, sed do...</p>
-                          <a class="read-more text-uppercase" href="#">
-                            Read More <span>+</span>
-                          </a>
+                      <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do...</p>
+                      <a class="read-more text-uppercase" href="#">
+                        Read More <span>+</span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1428,16 +1357,16 @@
                     </div>
                     <div class="blog-title">
                       <h3>Engineers ready to supply local business...</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                          adipiscing elit, sed do...</p>
-                          <a class="read-more text-uppercase" href="#">
-                            Read More <span>+</span>
-                          </a>
+                      <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do...</p>
+                      <a class="read-more text-uppercase" href="#">
+                        Read More <span>+</span>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1450,12 +1379,12 @@
         <div class="subs-content">
           <div class="row">
             <div class="col-md-6">
-                <div class="subs-txt">
-                  <h3>Subscribe to a Newsletter!</h3>
-                  <span>You will get our update instantly!
-                    <img src="/assets/img/like.png" alt="">
-                  </span>
-                </div>
+              <div class="subs-txt">
+                <h3>Subscribe to a Newsletter!</h3>
+                <span>You will get our update instantly!
+                  <img src="/assets/img/like.png" alt="">
+                </span>
+              </div>
             </div>
             <div class="col-md-6">
               <div class="subs-form position-relative">
@@ -1476,7 +1405,7 @@
         </div>
       </div>
     </section>
-    <!-- end of subscribe section -->   
+    <!-- end of subscribe section -->
   </main>
   <!-- Footer section -->
   <footer>
@@ -1559,7 +1488,7 @@
                   <span>Open Hours:</span>
                   <p>Mon - Sat: 8 am - 5 pm, <br>
                     Sunday: CLOSED
-                 </p>
+                  </p>
                 </div>
               </div>
             </div>
@@ -1619,17 +1548,82 @@
     </div>
   </footer>
   <!-- End of footer section -->
+  <div class="modal login-modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true"
+    style="padding-right: 0 !important;">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" data-background="assets/img/banner/lg-bg.jpg">
+          <div class="modal-login-head" id="exampleModalLabel">
+            <div class="login-head pera-content">
+              <a href="#"><img src="assets/img/logos/logo4.png" alt=""></a>
+              <p>Boamco laboris nisi ut aliquip ex ea commodo conseq nderit in voluptate velit esse</p>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="signup-login-tab">
+            <ul class="nav nav-pills mb-2 justify-content-center" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab"
+                  aria-controls="pills-home" aria-selected="true">Login</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab"
+                  aria-controls="pills-profile" aria-selected="false">Sign up</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div id="login" class="tab-pane fade active show">
+                  <div class="login-content pera-content text-center">
+                    <form action="#" method="post">
+                      <input type="text" placeholder="Username or email">
+                      <input type="text" placeholder="Password">
+                      <div class="login-label">
+                        <label for="form">
+                          <input type="checkbox" id="form">Remember me
+                        </label>
+                        <a href="#">Forget Password?</a>
+                      </div>
+                      <button class="submit" type="submit">Submit</button>
+                    </form>
+                    <p>Don’t have any account? <a href="#">Signup</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div id="signUp" class="tab-pane fade active show">
+                  <div class="sign-up-content pera-content text-center">
+                    <form action="#" method="post">
+                      <input type="text" placeholder="First Name">
+                      <input type="text" placeholder="Last Name">
+                      <input type="email" placeholder="Email address">
+                      <input type="text" placeholder="Username">
+                      <input type="text" placeholder="Password">
+                      <input type="text" placeholder="Confirm password">
+                      <div class="login-label clearfix">
+                        <label><input type="checkbox">By clicking signup you are agree to our terms of service</label>
+                      </div>
+                      <button class="submit" type="submit">Submit</button>
+                    </form>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
   </script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="/assets/js/main.js"></script>
 
 </body>
