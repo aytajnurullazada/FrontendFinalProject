@@ -225,3 +225,20 @@ section {
         }
     }
 }
+
+#back2Top {
+    width: 45px;
+    right: 15px;
+    z-index: 5;
+    height: 45px;
+    bottom: 20px;
+    display: none;
+    position: fixed;
+    line-height: 45px;
+    background-color: #e3002a;
+    text-align: center;
+
+    i {
+        color: #fff;
+    }
+}

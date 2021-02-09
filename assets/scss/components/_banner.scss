@@ -49,6 +49,23 @@
         transform: translate(0px, 0px) rotate(0deg) scale(1);
     }
 }
+@keyframes border_animation {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+
+    20% {
+        transform: scale(1.24);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2.1);
+        opacity: 0;
+    }
+}
+
 .square {
     position: absolute !important;
     z-index: 3;
@@ -94,9 +111,31 @@
         animation: animationFramesTwo 18s infinite alternate;
     }
 }
+
 .container {
-    
+
     .play-btn {
+        a {
+            .btn-border {
+                border: 2px solid rgba(0, 0, 0, 0.15);
+                top: 0;
+                opacity: 0;
+                width: 50px;
+                height: 50px;
+                border-radius: 60px;
+                position: absolute;
+                animation-play-state: running;
+                animation: border_animation 3.9s linear 0s infinite;
+                &.border2{
+                    animation-delay: 1.3s;
+                }
+
+                &.border3 {
+                    animation-delay: 2.6s;
+                }
+            }
+        }
+
         &:hover {
             background-color: #e3002a;
         }
@@ -159,7 +198,7 @@
     overflow: hidden;
     padding: 180px 0px 180px;
 
-    
+
 
     .image-banner {
         position: absolute;
@@ -211,12 +250,21 @@
 }
 
 .dot {
-        z-index: 1;
-        width: 7px;
-        height: 7px;
-        top: 200px;
-        left: 150px;
-        background-color: #00a4ff;
+    z-index: 1;
+    width: 7px;
+    height: 7px;
+    top: 200px;
+    left: 150px;
+    background-color: #00a4ff;
 
-    
+
+}
+
+$breakpoint-tablet: 990px;
+
+@media (max-width: $breakpoint-tablet) {
+
+    .image-banner {
+        display: none;
+    }
 }
