@@ -36,33 +36,35 @@ body {
             font-size: 18px;
         }
     }
+    .add-comment {
+        h3 {
+            color: #000;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            padding-bottom: 35px;
+        }
+    
+        form {
+            padding: 40px;
+            background-color: #fff;
+            .input{
+                margin: 0px -14px;
+            }
+            input {
+                height: 50px;
+                width:390px !important;
+                border: none;
+                margin: 0px 15px;
+                padding-left: 20px;
+                border-radius: 8px;
+                background-color: #efeff0;
+            }
+            button{
+                width: 100%;
+                border-radius: 8px;
+            }
+        }
+    }
 }
 
-.add-comment {
-    h3 {
-        color: #000;
-        font-size: 40px;
-        font-weight: 700;
-        text-align: center;
-        padding-bottom: 35px;
-    }
-
-    form {
-        padding: 40px;
-        background-color: #fff;
-
-        input {
-            height: 50px;
-            width: 340px !important;
-            border: none;
-            margin-right:  15px;
-            padding-left: 20px;
-            border-radius: 8px;
-            background-color: #efeff0;
-        }
-        button{
-            width: 100%;
-            border-radius: 8px;
-        }
-    }
-}

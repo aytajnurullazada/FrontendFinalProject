@@ -440,13 +440,14 @@
             padding: 0px 7px;
 
             input {
-                width: 254px;
+                width: 285px;
                 height: 45px;
                 border: none;
                 padding-left: 15px;
                 border-radius: 4px;
                 margin-bottom: 20px;
                 background-color: #efeff0;
+                outline: none;
             }
 
         }
@@ -462,6 +463,7 @@
         border-radius: 4px;
         margin-bottom: 20px;
         background-color: #efeff0;
+        outline: none;
     }
 
     button {
@@ -472,5 +474,6 @@
         font-weight: 700;
         border-radius: 40px;
         background-color: #0000fe;
+        outline: none;
     }
 }

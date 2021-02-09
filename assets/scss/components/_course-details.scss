@@ -154,14 +154,28 @@
                     .accordion-item {
                         margin-bottom: 10px;
 
+
                         button {
                             width: 100%;
                             border: none;
                             position: relative;
                             padding: 20px 20px 20px 50px;
                             background-color: #f2f2f4;
-                            border-radius: 0;
+                            display: flex;
+                            justify-content: space-between;
                             box-shadow: none;
+
+                            &::after {
+                                top: 50%;
+                                transform: translateY(-50%);
+                                left: 15px;
+                                color: #000;
+                                font-size: 50px;
+                                content: "-";
+                                position: absolute;
+                                background-image: none;
+                                height: auto;
+                            }
 
                             h3 {
                                 color: #000;
@@ -177,16 +191,15 @@
                                 color: black !important;
                             }
 
-                            .accordion-button.collapsed {
-                                content: "+";
-                                font-size: 40px;
-                                background-image: none;
-                                float: left;
+                            &.collapsed {
+                                &::after {
+                                    content: "+";
+                                    font-size: 40px;
+                                }
                             }
 
-                            &::after {
-                                content: "-";
-                            }
+
+
 
                         }
                     }
@@ -278,7 +291,7 @@
 
                         .rate {
                             margin-bottom: 10px;
-                            
+
 
                             ul {
                                 margin-right: 10px;
@@ -302,46 +315,342 @@
                                 margin-right: 10px;
 
                             }
-                            .seecond{
+
+                            .seecond {
                                 color: #555555;
                                 font-size: 14px !important;
                             }
                         }
-                        .student{
-                            span{
+
+                        .student {
+                            span {
                                 margin-right: 10px;
                             }
-                            i{
+
+                            i {
                                 color: #e3002a !important;
                                 margin-right: 6px !important;
                             }
                         }
                     }
                 }
-                .ins-details{
-                    p{
+
+                .ins-details {
+                    p {
                         font-size: 16px !important;
                         padding: 0;
                     }
                 }
             }
+
+            .course-reviews {
+                h3 {
+                    color: #000;
+                    font-size: 24px;
+                    font-weight: 700;
+                    padding: 25px 0;
+                    margin: 0;
+                }
+
+                .cmnt {
+                    display: flex;
+                    padding-bottom: 60px;
+
+                    .image {
+                        margin-right: 20px;
+                        border-radius: 8px;
+
+                        img {
+                            max-width: none;
+                        }
+                    }
+
+                    .txt {
+                        .author-rate {
+                            display: flex;
+                            justify-content: space-between;
+                            padding-bottom: 10px;
+
+                            .author {
+                                h3 {
+                                    color: #000;
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    padding: 0 0 5px 0;
+
+                                }
+
+                                margin: 0;
+                            }
+
+                            span {
+                                font-size: 14px;
+                                color: #555;
+                            }
+                        }
+
+                        .rate {
+                            display: flex;
+
+                            ul {
+                                display: flex;
+                                list-style: none;
+                                margin-right: 5px;
+
+                                li {
+                                    list-style: none;
+                                    color: #ebc90a;
+
+                                    &:last-child {
+                                        color: #d3d3d3;
+                                    }
+
+                                }
+
+                            }
+
+                            span {
+                                font-weight: 500;
+                                margin: 0 10px;
+                            }
+                        }
+
+                    }
+
+                    p {
+                        font-size: 16px !important;
+                        margin-bottom: 20px;
+                        padding: 0;
+                    }
+
+                    a {
+                        color: #fff;
+                        height: 40px;
+                        width: 100px;
+                        font-size: 15px;
+                        font-weight: 700;
+                        border-radius: 30px;
+                        line-height: 40px;
+                        display: inline-block;
+                        background-color: #ff5520;
+                        text-align: center;
+                    }
+                }
+
+                .add-comment {
+                    padding-top: 100px;
+                    position: relative;
+
+                    &::before {
+                        top: 0;
+                        left: -45px;
+                        height: 40px;
+                        width: 111%;
+                        content: "";
+                        position: absolute;
+                        background-color: #f2f2f4;
+                    }
+
+                    h3 {
+                        color: #000;
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+
+                    .comment-input {
+                        margin: 0px -7px;
+
+                        .input {
+                            padding: 0px 7px;
+
+                            input {
+                                width: 254px;
+                                height: 45px;
+                                border: none;
+                                padding-left: 15px;
+                                border-radius: 4px;
+                                margin-bottom: 20px;
+                                background-color: #efeff0;
+                            }
+
+                        }
+
+
+                    }
+
+                    textarea {
+                        width: 100%;
+                        border: none;
+                        height: 165px;
+                        padding: 15px;
+                        border-radius: 4px;
+                        margin-bottom: 20px;
+                        background-color: #efeff0;
+                    }
+
+                    button {
+                        color: #fff;
+                        width: 170px;
+                        height: 50px;
+                        border: none;
+                        font-weight: 700;
+                        border-radius: 40px;
+                        background-color: #0000fe;
+                    }
+                }
+            }
+
+            .view-offline {
+                padding-top: 25px;
+
+                h3 {
+                    margin: 0;
+                    font-family: $secondary-font;
+                    color: #000;
+                    font-size: 24px;
+                    font-weight: 700;
+                    padding-bottom: 10px;
+                }
+
+                p {
+                    font-size: 16px;
+                    margin: 0;
+                    padding: 0;
+
+                }
+
+                a {
+                    color: #fff;
+                    font-weight: 700;
+                    margin-top: 30px;
+                    padding: 15px 30px;
+                    border-radius: 40px;
+                    display: inline-block;
+                    background-color: #ff5520;
+                }
+            }
         }
     }
-}
 
+    .video {
+        .image {
+            position: relative !important;
+        }
 
+        .icon {
+            top: 50%;
+            left: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            color: #ff5520;
+            position: absolute;
+            line-height: 50px;
+            border-radius: 100%;
+            background-color: #fff;
+            transform: translateY(-50%);
+            position: absolute;
+            text-align: center;
+        }
+    }
 
+    .widget {
+        margin-top: 50px;
+        overflow: hidden;
+        border-radius: 4px;
+        margin-bottom: 40px;
+        background-color: #fff;
 
+        .content {
+            padding: 35px 30px;
 
-.no-transition {
-    -webkit-transition: height 0;
-    -moz-transition: height 0;
-    -ms-transition: height 0;
-    -o-transition: height 0;
-    transition: height 0;
-}
-.crev{
-    width: 500px;
-    height: 350px;
-    background-color: pink;
+            .list {
+                .item {
+                    margin-bottom: 10px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #eef1fe;
+                    display: flex;
+                    justify-content: space-between;
+
+                    span {
+                        color: black;
+
+                        i {
+                            color: $secondary-color;
+                            margin-right: 7px;
+                        }
+                    }
+                }
+            }
+
+            .price {
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                    float: left;
+                    color: #000;
+                    font-size: 24px;
+                    font-weight: 700;
+
+                    strong {
+                        color: $secondary-color;
+                    }
+                }
+
+                a {
+                    color: #fff;
+                    width: 75px;
+                    height: 30px;
+                    font-size: 15px;
+                    margin-top: 5px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    margin-left: 20px;
+                    text-align: center;
+                    display: inline-block;
+                    background-color: #ff5520;
+                }
+            }
+        }
+    }
+
+    .widget {
+        .content {
+            h3 {
+                color: #000;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .course {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 15px;
+                padding-bottom: 15px;
+                border-bottom: 1px solid #eef1fe;
+
+                .image {
+                    margin-right: 15px;
+                }
+
+                a {
+                    color: #000;
+                    display: block;
+                    font-weight: 700;
+                    line-height: 1.375;
+                    padding-bottom: 3px;
+                    font-size: 14px !important;
+                }
+
+                span {
+                    display: block;
+                    color: #ff5520;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
 }
